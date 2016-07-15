@@ -24,28 +24,51 @@ small{
 }
 
 /*============================================================================ Navigation Bar*/
-
 #navbar-custom.navbar-default .navbar-brand {
     color: rgba(255, 255, 255, 1);
 }
 #navbar-custom.navbar-default {
     font-size: 12px;
-    background-color: rgba(36, 167, 255, 1);
+    background-color: rgba(0, 173, 127, 0.83);
     border-bottom-width: 0px;
+}
+.navbar-city{
+  margin-top: 10px;
+  padding: 5px 8px;
+  background-color: rgba(0, 212, 163, 1);
+  display: block;
+  list-style: none;
+  border-radius: 10px;
+  color: #fff;
+}
+.navbar-city:hover{
+  color: rgba(0, 212, 163, 1);
+  background-color: #fff;
+}
+.drop-link{
+  color: #fff;
+  text-decoration: none;
+}
+.drop-link:hover{
+  color: rgba(0, 212, 163, 1);
+  text-decoration: none;
+}
+.drop-link:focus{
+  text-decoration: none;
 }
 #navbar-custom.navbar-default .navbar-nav>li>a {
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(36, 167, 255, 1);
+    background-color: rgba(0, 212, 163, 1);
 }
 #navbar-custom.navbar-default .navbar-nav>li>a:hover,
 #navbar-custom.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(0, 103, 171, 1);
+    color: rgba(0, 212, 163, 1);
     background-color: rgba(255, 255, 255, 1);
 }
 #navbar-custom.navbar-default .navbar-nav>.active>a,
 #navbar-custom.navbar-default .navbar-nav>.active>a:hover,
 #navbar-custom.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(0, 70, 120, 1);
+    color: rgba(66, 66, 66, 1);
     background-color: rgba(255, 255, 255, 1);
 }
 #navbar-custom.navbar-default .navbar-toggle {
@@ -60,9 +83,8 @@ small{
 }
 #navbar-custom.navbar-default .navbar-toggle:hover .icon-bar,
 #navbar-custom.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #24a7ff;
+    background-color: #00d4a3;
 }
-
 /*============================================================================ Button Head*/
 .btn-tool {
   border: none;

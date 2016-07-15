@@ -6,8 +6,7 @@ body{
 
 }
 p{
-	font-size: 11px;
-	text-align: justify;
+	font-size: 12px;
 }
 small{
 	font-size: 9px;
@@ -17,7 +16,7 @@ small{
 	margin-right: 0px;
 	margin-left: 0px;
 }
-.pad-0{
+.pad{
 	padding: 0px;
 }
 .breadcrumb {
@@ -63,3 +62,84 @@ small{
 #navbar-custom.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #24a7ff;
 }
+
+/*============================================================================ Button Head*/
+.btn-tool {
+  border: none;
+  border-radius: 0px;
+}
+.btn-tool:focus,
+.btn-tool:active:focus,
+.btn-tool.active:focus,
+.btn-tool.focus,
+.btn-tool:active.focus,
+.btn-tool.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-tool:hover,
+.btn-tool:focus,
+.btn-tool.focus {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+}
+.btn-tool:active,
+.btn-tool.active {
+  background-color: #fff;
+  outline: 0;
+  color: #11aef4;
+  box-shadow: none;
+ }
+
+/*============================================================*/
+
+.btn-hover{
+  opacity: 0.1;
+  height: 200px;
+  width: 100%;
+  background-color: #29fb00;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  transition: opacity .3s;
+}
+.btn-hover:hover{
+  opacity: 0.8;
+  color: #fff;
+  border: none;
+}
+
+.textbox {
+    background: #424242 url(http://html-generator.weebly.com/files/theme/input-text-40.png) no-repeat;
+    background-position: 10px -5px !important;
+    padding: 10px 10px 10px 40px;
+    width: 95%;
+    border: 0.5px solid #adadad;
+    border-radius: 7px;
+}
+
+.textbox:focus {
+    color: #000;  
+    background-color: #FFF;
+    border-color: #424242;
+    outline: none;
+}
+
+.fa:hover {
+  color: #fff;
+}
+
+
+
+/*==================================================================== Swiper*/
+.swiper-container {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+        width: 33.3%;
+    }

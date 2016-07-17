@@ -160,8 +160,42 @@ small{
         width: 100%;
         margin: 20px auto;
     }
-    .swiper-slide {
-        font-size: 18px;
-        background: #fff;
-        width: 33.3%;
-    }
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+}
+#stars {
+  font-size: 13px;
+}
+
+.btn-custon{
+
+}
+.swiper-pagination-bullet {
+    opacity: 1;
+    background: rgba(0, 212, 163, 1);
+}
+
+
+.button {
+  position: relative;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 0px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: rgba(0, 212, 163, 1);
+  transition:         0.08s ease-out;
+  -o-transition:      0.08s ease-out;
+  -ms-transition:     0.08s ease-out;
+  -moz-transition:    0.08s ease-out;
+  -webkit-transition: 0.08s ease-out;
+}
+
+.fill:hover {
+  color: rgba(0, 212, 163, 1);
+  background-color: #fff;
+}
+

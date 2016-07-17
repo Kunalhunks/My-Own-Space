@@ -90,14 +90,334 @@
           </ul>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+	  <ul class="nav navbar-nav navbar-right">
         <li><a href="#">News</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
         <li><a href="#">Profile</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+</div><!--navbar end-->
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content"  style="border-radius: 0px;">    
+		    	<div class="modal-body">
+		    		<div class="row">
+		    			<div class="col-lg-5">
+		    				<img src="images\house.jpg" style="width:240px; height:400px; margin-left:-15px; margin-bottom:-15px;">
+		    			</div>
+		    			<div class="col-lg-7" >
+		    				<div class="contents" style="padding-top:90px;">
+		    					<div class="row text-center">
+		        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color: #DD4B39; margin-bottom:10px;"><i class="fa fa-google-plus" aria-hidden="true" style="padding-right:10px;"></i> Connect with Google+</button>
+
+		        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color: #3B5998; margin-bottom:10px;"><i class="fa fa-facebook" aria-hidden="true" style="padding-right:10px;"></i> Connect with Facebook</button>
+		        				</div>
+		        				<div class="row text-center">
+		        					<p style="color:#999; margin:10px 0px;">or use your email address</p>
+		        				</div>
+		        				<div class="row text-center">
+		        					<div class="col-sm-12">
+			        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color:#12bd91; margin-bottom:10px; margin:10px 0px;">Login</button>
+			        				</div>	
+			        				<div class="col-sm-12">
+			        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:#12bd91; background-color: white; margin-bottom:10px; border:1px solid skyblue;">Sign Up</button>
+			        				</div>
+		        				</div>
+
+
+		        			</div>	
+		        		</div>	
+		        	</div>	
+			    </div>
+		   </div>
+		  </div>
+		</div>
+
+
+
+
+	
+	<!--jumbotron-->
+	<div class="jumbotron" style="background-image:url(images/bg.jpg); margin-bottom:0px;">
+
+		<div class="container text-center" style="padding-top:20px;">
+
+			<h2 style="margin-top:140px; font-size:35px; color:white;">Lorem ipsum dolor sit amet ut equidem  </h2>
+			
+			<div class="row" style="padding-top:20px; padding-bottom:140px;" >
+				  <div class="col-lg-3"></div>
+				  <div class="col-lg-6" >
+   					 <div class="input-group" >
+     					 <input type="text" class="form-control" placeholder="Project name, Location, Builder.." style="border-radius:2px;">
+     				 	  <span class="input-group-btn">
+      			 		  <button class="btn " type="button" id="search-box" style="background-color:#12bd91; border-radius: 2px; color:white;">Search</button>
+    					  </span>
+   				 	</div><!-- /input-group -->
+  				</div><!-- /.col-lg-6 -->
+  				<div class="col-lg-3"></div>
+			</div><!--row end-->	
+
+
+		</div> <!-- end container-->
+	</div> <!--end jumbotron-->		
+
+
+<!-- Error -->
+<div style="height: 30px;"></div>
+<div class="container-fluid" >
+	<div class="container">
+		<h5 style="margin:0px;">SOME</h5>
+		<h2 style="text-transform: uppercase; margin: 0px;">Top Reviews</h2>
+		<hr style="border-top-color: #000; margin:5px;">
+		<p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a turpis ultricies, rhoncus leo eu, volutpat tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim vitae nisl a porta. In commodo ipsum id ipsum vehicula, eget faucibus libero bibendum. Nunc aliquet sem ut quam pellentesque, porta imperdiet felis egestas. Nulla facilisi. Proin sit amet purus porttitor elit interdum cursus. Etiam non consectetur nun. In commodo ipsum id ipsum vehicula, eget faucibus libero bibendum. Nunc aliquet sem ut quam pellentesque, porta imperdiet felis egestas. Nulla facilisi. 
+		Proin sit amet purus porttitor elit interdum cursus. Etiam non consectetur nun.</p>
+		<div class="swiper-container swiper1">
+	        <div class="swiper-wrapper">
+	        	<!-- Single Card -->
+	            <div class="swiper-slide">
+	            	<div class="col-sm-12" style="padding: 30px 0px;">
+		            	<div class="col-sm-5 col-sm-offset-1">
+							<div class="col-lg-3"> 
+								<img src="images/profile1.jpg" class="img-circle" width="100" height="100">
+								<div id="stars" style="padding-top:10px; color: yellow; text-align: center;">
+									<!-- Star Filled icon by Icons8 -->
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<!--star end-->
+								</div>
+							</div>
+							<div class="col-lg-4" style="padding-left:15px;">
+								<p id="username-1">Kunal Ch.</p>
+								<p id="no-of-review-1" style="font-size:15px; margin-top:-10px;"><kbd>180</kbd> Reviews</p>
+								<p id="no-of-review-1" style="font-size:15px; margin-top:-10px;"><kbd>34</kbd> Likes</p>
+							</div>
+							<div class="col-lg-5" style="">
+								<p id="property-name-1">Green View, Delhi</p>
+								<p id="user-review-1" style="font-size:15px; margin-top:-10px;">
+									Lorem ipsum dolor sit amet, te aperiri labitur eum, laudem utamur cotidieque cum ut.</p>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="col-lg-3"> 
+								<img src="images/profile2.jpg" class="img-circle" width="100" height="100">
+								<div id="stars" style="padding-top:10px; color: yellow; text-align: center;">
+									<!-- Star Filled icon by Icons8 -->
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<!--star end-->
+								</div>
+							</div>
+							<div class="col-lg-4" style="padding-left:15px;">
+								<p id="username-1">Kunal Ch.</p>
+								<p id="no-of-review-1" style="font-size:15px; margin-top:-10px;"><kbd>180</kbd> Reviews</p>
+								<p id="no-of-review-1" style="font-size:15px; margin-top:-10px;"><kbd>34</kbd> Likes</p>
+							</div>
+							<div class="col-lg-5" style="">
+								<p id="property-name-1">Green View, Delhi</p>
+								<p id="user-review-1" style="font-size:15px; margin-top:-10px;">
+									Lorem ipsum dolor sit amet, te aperiri labitur eum, laudem utamur cotidieque cum ut.</p>
+							</div>
+						</div>
+					</div>
+	            </div>
+	            <!-- Single Card -->
+	            <div class="swiper-slide">
+	            	<div class="col-sm-12" style="padding: 30px 0px;">
+		            	<div class="col-sm-5 col-sm-offset-1">
+							<div class="col-lg-3"> 
+								<img src="images/profile3.jpg" class="img-circle" width="100" height="100">
+								<div id="stars" style="padding-top:10px; color: yellow; text-align: center;">
+									<!-- Star Filled icon by Icons8 -->
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<!--star end-->
+								</div>
+							</div>
+							<div class="col-lg-4" style="padding-left:15px;">
+								<p id="username-1">Kunal Ch.</p>
+								<p id="no-of-review-1" style="font-size:15px; margin-top:-10px;"><kbd>180</kbd> Reviews</p>
+								<p id="no-of-review-1" style="font-size:15px; margin-top:-10px;"><kbd>34</kbd> Likes</p>
+							</div>
+							<div class="col-lg-5" style="">
+								<p id="property-name-1">Green View, Delhi</p>
+								<p id="user-review-1" style="font-size:15px; margin-top:-10px;">
+									Lorem ipsum dolor sit amet, te aperiri labitur eum, laudem utamur cotidieque cum ut.</p>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="col-lg-3"> 
+								<img src="images/profile4.jpg" class="img-circle" width="100" height="100">
+								<div id="stars" style="padding-top:10px; color: yellow; text-align: center;">
+									<!-- Star Filled icon by Icons8 -->
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<!--star end-->
+								</div>
+							</div>
+							<div class="col-lg-4" style="padding-left:15px;">
+								<p id="username-1">Kunal Ch.</p>
+								<p id="no-of-review-1" style="font-size:15px; margin-top:-10px;"><kbd>180</kbd> Reviews</p>
+								<p id="no-of-review-1" style="font-size:15px; margin-top:-10px;"><kbd>34</kbd> Likes</p>
+							</div>
+							<div class="col-lg-5" style="">
+								<p id="property-name-1">Green View, Delhi</p>
+								<p id="user-review-1" style="font-size:15px; margin-top:-10px;">
+									Lorem ipsum dolor sit amet, te aperiri labitur eum, laudem utamur cotidieque cum ut.</p>
+							</div>
+						</div>
+					</div>
+	            </div>
+	            <!-- Single Card -->
+	            <div class="swiper-slide">
+	            	<div class="col-sm-12" style="padding: 30px 0px;">
+		            	<div class="col-sm-5 col-sm-offset-1">
+							<div class="col-lg-3"> 
+								<img src="images/profile5.png" class="img-circle" width="100" height="100">
+								<div id="stars" style="padding-top:10px; color: yellow; text-align: center;">
+									<!-- Star Filled icon by Icons8 -->
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<!--star end-->
+								</div>
+							</div>
+							<div class="col-lg-4" style="padding-left:15px;">
+								<p id="username-1">Kunal Ch.</p>
+								<p id="no-of-review-1" style="font-size:15px; margin-top:-10px;"><kbd>180</kbd> Reviews</p>
+								<p id="no-of-review-1" style="font-size:15px; margin-top:-10px;"><kbd>34</kbd> Likes</p>
+							</div>
+							<div class="col-lg-5" style="">
+								<p id="property-name-1">Green View, Delhi</p>
+								<p id="user-review-1" style="font-size:15px; margin-top:-10px;">
+									Lorem ipsum dolor sit amet, te aperiri labitur eum, laudem utamur cotidieque cum ut.</p>
+							</div>
+						</div>
+						<div class="col-sm-5 ">
+							<div style="padding: 7% auto" class="center-block">
+								<button class="btn button fill">More Reviews</button>
+							</div>
+						</div>
+					</div>
+	            </div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination swiper-pagination1"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+	    </div>
+	</div>
 </div>
+
+<hr style="">
+
+<!--Statistics div starts-->
+	<div class="container" style="">
+		<section>
+
+
+			<div class="row">
+
+			<!-- projects reviewed -->
+				<div class="col-lg-4">
+					<div class="row" style="padding-top:20px;">
+						<div class="col-lg-8" style="padding-left: 0px;">
+							<h3>PROJECTS <span style="font-size:15px;">REVIEWED</span></h3>
+						</div>
+						<div class="col-lg-4">
+							<p style="font-size:42px">890</p>
+						</div>
+					</div>	
+					<div class="row" style="border-top:1px solid gray; padding-right:0px">
+						<p style="padding:10px 0 0 0;">Lorem ipsum dolor sit amet, te aperiri labitur eum, laudem utamur cotidieque cum ut.Lorem ipsum dolor sit amet.</p>
+					</div>
+					<!-- USERS -->
+					<div class="row" style="padding-top:20px;">
+						<div class="col-lg-8" style="padding-left: 0px;">
+							<h3>USERS <span style="font-size:16px;"></span></h3>
+						</div>
+						<div class="col-lg-4">
+							<p style="font-size:42px">762</p>
+						</div>
+					</div>	
+					<div class="row" style="border-top:1px solid gray; padding-right:0px">
+						<p style="padding:10px 0 0 0;">Lorem ipsum dolor sit amet, te aperiri labitur eum, laudem utamur cotidieque cum ut.Lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+				<!-- centre image -->
+				<div class="col-lg-4" style="padding:30px 0 0px 0; ">
+					<img src="images/building1.png" width="350px" height="300px">
+				</div>
+				
+				<div class="col-lg-4">
+				<!-- total reviews -->
+					<div class="row" style="padding-top:20px;">
+						<div class="col-lg-8" style="padding-left: 0px;">
+							<h3>TOTAL <span style="font-size:15px;">REVIEWS</span></h3>
+						</div>
+						<div class="col-lg-4">
+							<p style="font-size:42px">1250</p>
+						</div>
+					</div>	
+					<div class="row" style="border-top:1px solid gray; padding-right:0px">
+						<p style="padding:10px 0 0 0;">Lorem ipsum dolor sit amet, te aperiri labitur eum, laudem utamur cotidieque cum ut.Lorem ipsum dolor sit amet.</p>
+					</div>
+					<!-- builders -->
+					<div class="row" style="padding-top:20px;">
+						<div class="col-lg-8" style="padding-left: 0px;">
+							<h3>BUILDERS <span style="font-size:14px;"></span></h3>
+						</div>
+						<div class="col-lg-4">
+							<p style="font-size:42px">462</p>
+						</div>
+					</div>	
+					<div class="row" style="border-top:1px solid gray; padding-right:0px">
+						<p style="padding:10px 0 0 0;">Lorem ipsum dolor sit amet, te aperiri labitur eum, laudem utamur cotidieque cum ut.Lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+
+			</div>
+
+
+
+	<!--		<div class="row" >
+				<div class="col-lg-4" >
+					<p class="stat-col-1" style="font-size:80px; text-align:center;">254</p>
+					<p style="font-size:25px; text-align:center;">Projects Reviewed</p>
+				</div>		
+				<div class="col-lg-4" >
+					<p class="stat-col-1" style="font-size:80px; text-align:center;">890</p>
+					<p style="font-size:25px; text-align:center;">Users</p>
+				</div>	
+				<div class="col-lg-4" >
+					<p class="stat-col-1" style="font-size:80px; text-align:center;">2400</p>
+					<p style="font-size:25px; text-align:center;">Total Reviews</p>
+				</div>					
+	-->			
+			</div>		
+		</section>
+	</div> <!--end container-->
+	<!--Statistics div ends-->
+
+
+
 
 <div class="container-fluid" style="background-image: url(images/test2.jpg); background-attachment: scroll; background-size: cover; color: #fff;">
 	<div class="container" style="padding-top:60px;">
@@ -122,7 +442,7 @@
 	<div class="container" style="padding-top: 20px;">
 		<div class="row">
 
-			<div class="swiper-container">
+			<div class="swiper-container swiper2">
 			    <div class="swiper-wrapper">
 			        <div class="swiper-slide">
 			        	<div class="col-sm-3">
@@ -336,7 +656,7 @@
 			        </div>
 			    </div>
 			    <!-- Add Pagination -->
-			    <div class="swiper-pagination"></div>
+			    <div class="swiper-pagination swiper-pagination2"></div>
 			</div>
 
 
@@ -396,8 +716,17 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
+    var swiper = new Swiper('.swiper1', {
+        pagination: '.swiper-pagination1',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        hashnav: true
+    });
+    var swiper = new Swiper('.swiper2', {
+        pagination: '.swiper-pagination2',
         slidesPerView: 1,
         paginationClickable: true,
         spaceBetween: 30,

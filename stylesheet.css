@@ -2,6 +2,27 @@ html{
 
 }
 
+.btn.outline {
+    background: none;
+    padding: 7% auto;
+    
+}
+.btn-primary.outline {
+    border: 2px solid #12BD91;
+    color: #12BD91;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    border-color: rgba(0, 212, 163, 1);
+    background-color: rgba(0, 212, 163, 1);
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
+
+
 body{
 
 }

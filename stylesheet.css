@@ -56,11 +56,11 @@ small{
 .navbar-city{
   margin-top: 10px;
   padding: 5px 8px;
-  background-color: rgba(0, 212, 163, 1);
+  background-color: rgba(255,255,255, 0.3);
   display: block;
   list-style: none;
   border-radius: 10px;
-  color: #fff;
+  color:  rgba(0, 173, 127, 1);
 }
 .navbar-city:hover{
   color: rgba(0, 212, 163, 1);

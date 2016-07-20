@@ -1,0 +1,222 @@
+html{
+
+}
+
+.btn.outline {
+    background: none;
+    padding: 7% auto;
+    
+}
+.btn-primary.outline {
+    border: 2px solid #27755a;
+    color: #27755a;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    border-color: rgb(39, 117, 90);
+    background-color: rgb(39, 117, 90);
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
+
+
+body{
+  overflow-x: hidden;
+}
+p{
+  font-size: 12px;
+}
+small{
+  font-size: 9px;
+}
+
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.pad{
+  padding: 0px;
+}
+.breadcrumb {
+  background-color: white;
+}
+
+/*============================================================================ Navigation Bar*/
+#navbar-custom.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+#navbar-custom.navbar-default {
+    font-size: 12px;
+    background-color: #27755a;
+    border-bottom-width: 0px;
+}
+.navbar-city{
+  margin-top: 10px;
+  padding: 5px 8px;
+  background-color: rgba(255,255,255, 0.3);
+  display: block;
+  list-style: none;
+  border-radius: 10px;
+  color:  rgba(0, 173, 127, 1);
+}
+.navbar-city:hover{
+  color: rgba(0, 212, 163, 1);
+  background-color: #fff;
+}
+.drop-link{
+  color: #fff;
+  text-decoration: none;
+}
+.drop-link:hover{
+  color: rgba(0, 212, 163, 1);
+  text-decoration: none;
+}
+.drop-link:focus{
+  text-decoration: none;
+}
+#navbar-custom.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: #27755a;
+}
+#navbar-custom.navbar-default .navbar-nav>li>a:hover,
+#navbar-custom.navbar-default .navbar-nav>li>a:focus {
+    color: rgb(0, 212, 163);
+    background-color: rgb(38, 105, 82);
+}
+#navbar-custom.navbar-default .navbar-nav>.active>a,
+#navbar-custom.navbar-default .navbar-nav>.active>a:hover,
+#navbar-custom.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(66, 66, 66, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+#navbar-custom.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+}
+#navbar-custom.navbar-default .navbar-toggle:hover,
+#navbar-custom.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+#navbar-custom.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+#navbar-custom.navbar-default .navbar-toggle:hover .icon-bar,
+#navbar-custom.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #00d4a3;
+}
+/*============================================================================ Button Head*/
+.btn-tool {
+  border: none;
+  border-radius: 0px;
+}
+.btn-tool:focus,
+.btn-tool:active:focus,
+.btn-tool.active:focus,
+.btn-tool.focus,
+.btn-tool:active.focus,
+.btn-tool.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-tool:hover,
+.btn-tool:focus,
+.btn-tool.focus {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+}
+.btn-tool:active,
+.btn-tool.active {
+  background-color: #fff;
+  outline: 0;
+  color: #11aef4;
+  box-shadow: none;
+ }
+
+/*============================================================*/
+
+.btn-hover{
+  opacity: 0.1;
+  height: 200px;
+  width: 100%;
+  background-color: #29fb00;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  transition: opacity .3s;
+}
+.btn-hover:hover{
+  opacity: 0.8;
+  color: #fff;
+  border: none;
+}
+
+.textbox {
+    background: #424242 url(http://html-generator.weebly.com/files/theme/input-text-40.png) no-repeat;
+    background-position: 10px -5px !important;
+    padding: 10px 10px 10px 40px;
+    width: 95%;
+    border: 0.5px solid #adadad;
+    border-radius: 7px;
+}
+
+.textbox:focus {
+    color: #000;  
+    background-color: #FFF;
+    border-color: #424242;
+    outline: none;
+}
+
+.fa:hover {
+  color: #fff;
+}
+
+
+
+/*==================================================================== Swiper*/
+.swiper-container {
+        width: 100%;
+        margin: 20px auto;
+    }
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+}
+#stars {
+  font-size: 13px;
+}
+
+.btn-custon{
+
+}
+.swiper-pagination-bullet {
+    opacity: 1;
+    background: rgba(0, 212, 163, 1);
+}
+
+
+.button {
+  position: relative;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 0px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #27755a;
+  transition:         0.08s ease-out;
+  -o-transition:      0.08s ease-out;
+  -ms-transition:     0.08s ease-out;
+  -moz-transition:    0.08s ease-out;
+  -webkit-transition: 0.08s ease-out;
+}
+
+.fill:hover {
+  color: rgb(39, 117, 90);
+  background-color: #fff;
+}
+

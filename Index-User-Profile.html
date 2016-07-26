@@ -15,117 +15,313 @@
 	<script type="text/javascript" src="lib/js/bootstrap.min.js" ></script>
 
 	<!-- User Embedded -->
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="layout.css">
-	<script type="text/javascript" src="javascript.js"></script>
-
-	<!-- Font Awesome -->
-	<script src="https://use.fontawesome.com/936bbf24d4.js"></script>
-
-</head>
-<body>
-
-
-<!-- ========================================================================================= Navigation Bar  -->
-<div id="navbar-custom" class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-            </button>
-        	<a class="navbar-brand" href="#" >REAL_ESTATE</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-menubuilder">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-search" style="font-size: 16px;"></span></a>
-                </li>
-                <li><a href="#"><span class="glyphicon glyphicon-bell" style="font-size: 16px;"></span></a>
-                </li>
-                <li><a href="#"><span class="glyphicon glyphicon-option-vertical" style="font-size: 16px;"></span></a>
-                </li>
-            </ul>
-        </div>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">	<div class="navbar navbar-default navbar-fixed-top" id="navbar-custom">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">REALESTATE</a>
     </div>
-</div>
 
-<!-- ============================================================================= Wrapper -->
-<div class="container-fluid pad" style="margin-top: 50px; ">
-	<div class="col-sm-1 pad" style="background-color: #424242; color: #fff; text-align: center; position: fixed;box-shadow: 0px 1px 1px #000;">
-		<div class="row">
-			
-			<div class="col-sm-12 btn btn-tool active">
-				<div style="padding: 20px 0px;">
-					<span class="glyphicon glyphicon-th-large"></span>
-					<p>News Feed</p>
-				</div>
-			</div>
-			
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="navbar-city pull-left">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle drop-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select City <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Ghaziabad</a></li>
+            <li><a href="#">Faridabad</a></li>
+            <li><a href="#">Gautam Buddha Nagar</a></li>
+            <li><a href="#">Noida</a></li>
+            <li><a href="#">Gurgaon</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+  		<div class="search-bar">
+			<div class="col-md-6 col-md-offset-1" style="padding-top:8px; ">
+					<div class="input-group" >
+ 					  <input type="text" class="form-control" placeholder="Project name, Location, Builder..">
+
+ 				 	  <span class="input-group-btn">
+  			 		  <button class="btn" type="button"style="background-color:rgba(0, 212, 163, 1); border-radius: 2px; color:white; ">Search</button>
+					  </span>
+					  <!-- Dropdown -->
+					  
+				 	</div><!-- /input-group -->
+				</div><!-- /.col-md-6 -->
+		</div><!--row end-->
+      </ul>
+	  <ul class="nav navbar-nav navbar-right" style="margin-top:-10px;">
+        <li><a href="#">News</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</div><!--navbar end-->
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content"  style="border-radius: 0px;">    
+		    	<div class="modal-body">
+		    		<div class="row">
+		    			<div class="col-md-5">
+		    				<img src="images\house.jpg" style="width:240px; height:400px; margin-left:-15px; margin-bottom:-15px;">
+		    			</div>
+		    			<div class="col-md-7" >
+		    				<div class="contents" style="padding-top:90px;">
+		    					<div class="row text-center">
+		        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color: #DD4B39; margin-bottom:10px;"><i class="fa fa-google-plus" aria-hidden="true" style="padding-right:10px;"></i> Connect with Google+</button>
+
+		        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color: #3B5998; margin-bottom:10px;"><i class="fa fa-facebook" aria-hidden="true" style="padding-right:10px;"></i> Connect with Facebook</button>
+		        				</div>
+		        				<div class="row text-center">
+		        					<p style="color:#999; margin:10px 0px;">or use your email address</p>
+		        				</div>
+		        				<div class="row text-center">
+		        					<div class="col-sm-12">
+			        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color:#12bd91; margin-bottom:10px; margin:10px 0px;">Login</button>
+			        				</div>	
+			        				<div class="col-sm-12">
+			        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:#12bd91; background-color: white; margin-bottom:10px; border:1px solid skyblue;">Sign Up</button>
+			        				</div>
+		        				</div>
+
+
+		        			</div>	
+		        		</div>	
+		        	</div>	
+			    </div>
+		   </div>
+		  </div>
 		</div>
-		<div class="row">
-			<div class="col-sm-12 btn btn-tool">
-				<div style="padding: 20px 0px;">
-					<span class="glyphicon glyphicon-user"></span>
-					<p>User Profile</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 btn btn-tool">
-				<div style="padding: 20px 0px;">
-					<span class="glyphicon glyphicon-envelope"></span>
-					<p>Mailbox</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 btn btn-tool">
-				<div style="padding: 20px 0px;">
-					<span class="glyphicon glyphicon-signal"></span>
-					<p>Statistics</p>
-				</div>
-			</div>
+		<!--modal end-->
+
+<!-- ================================================ Wrapper  -->
+<div class="wrapper">
+	<div class="container " >
+		
+
+
+
+<!-- =========================================== Cover -->
+<div class="row background-cover">
+	<div class="img-top">
+		<div class="col-sm-3 col-xs-10 col-sm-offset-0 col-xs-offset-1">
+			<img src="images/placeholder_image.jpg" height="180px" width="auto" class="center-block">
 		</div>
 	</div>
-	<div class="col-sm-11 col-sm-offset-1 pad">
-		<div style="height: 3000px; background-color: transparent;">
-			<div class="col-sm-8" style="padding: 20px;">
-				<div class="col-sm-4 thumbnail"  >
-					<div class="row" style="padding: 5px;">
-						<img src="images/placeholder_image.jpg" class="img-responsive">
+</div>
+
+<!-- ==================================================== Strip -->
+<div class="row background-strip">
+	<div class="col-md-offset-3 col-md-9">
+		<ul class="nav nav-pills">
+		    <li class="active"><a data-toggle="pill" href="#review">Review</a></li>
+		    <li><a data-toggle="pill" href="#follow">Following</a></li>
+		    <li><a data-toggle="pill" href="#follower">Follower</a></li>
+		    <li><a data-toggle="pill" href="#fav">Favourite</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- ====================================================== Left and Main Panel  -->
+<div class="row">
+	<div class="col-md-3 left-bg">
+		<p>asdjhjasoifhsaopfhquwncijashiu</p>
+	</div>
+	<div class="col-md-9">
+	  	<div class="tab-content">
+		    <div id="review" class="tab-pane fade in active">
+			    <div class="panel-padding">
+			    	<div style="padding: 10px;">
+						<h3 style="text-transform: uppercase; margin: 0px;">Top Reviews</h3>
+						<hr style="border-top-color: #000; margin:5px 0px 30px 0px;">
 					</div>
-					<div style="padding: 0px 5px;">
-						<div class="row">
-							<h4>Member's NAME</h4>
-							<p style="font-size: 10px; line-height: 10px;">Customer <br>Ghaziabad</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam diam, eleifend nec ultricies sed, pretium in ligula. Sed vehicula id magna vel pretium. Sed sagittis, arcu sed lacinia aliquam.</p>
-						</div>
-						<div class="row">
-							<div class="col-sm-12 pad">
-								<p style="font-weight: bolder;font-size: 14px;">Apartments Available</p>
-								<p style="line-height: 1px;">2BHK 3BHK 4BHK</p>
+			    	<!-- Single Row for review -->
+			 		<div class="row" style="margin-bottom: 40px;">
+	            		<!-- Image Column -->
+						<div class="col-lg-2"> 
+							<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+							<!-- Reviews Star -->
+							<div id="stars" style="padding-top:0px; color: #fff600;">
+								<!-- Star Filled icon by Icons8 -->
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<!--star end-->
 							</div>
-							<div class="col-sm-12 pad ">
-								<p style="font-weight: bolder;font-size: 14px;">Range</p>
-								<p style="line-height: 1px;">Rs 44.99 to 64.41 L</p>
+						</div>
+						<!-- Information -->
+						<div class="col-lg-3" style="padding-left:15px; text-align:justify; ">
+							<p id="username-1" style="font-size:15px; " >Kunal Chaudhary</p>
+							<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+							<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes</p>
+							<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>2</kbd> Level</p>
+						</div>
+						<!-- Review Write Up -->
+						<div class="col-lg-7" style="text-align:justify; ">
+							<p id="property-name-1" style="font-size:15px; margin-bottom: 2px; ">Green View, Delhi</p>
+							<p id="user-review-1" style="font-size:12px; line-height: 16px;">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
+						</div>
+			 		</div>
+			 		<!-- Single Row for review -->
+			 		<div class="row" style="margin-bottom: 40px;">
+	            		<!-- Image Column -->
+						<div class="col-lg-2"> 
+							<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+							<!-- Reviews Star -->
+							<div id="stars" style="padding-top:0px; color: #fff600;">
+								<!-- Star Filled icon by Icons8 -->
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<!--star end-->
 							</div>
 						</div>
-						<div class="row">
-							<ol class="breadcrumb" style="padding: 20px 0px; background-color: white; font-size:11px; margin-bottom: 0px;">
-							  <li><a href="#">Ghaziabad</a></li>
-							  <li><a href="#">NH-58</a></li>
-							  <li class="active">Rajnagar Extension</li>
-							</ol>
-						</div>	
+						<!-- Information -->
+						<div class="col-lg-3" style="padding-left:15px; text-align:justify; ">
+							<p id="username-1" style="font-size:15px; " >Kunal Chaudhary</p>
+							<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+							<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes</p>
+							<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>2</kbd> Level</p>
+						</div>
+						<!-- Review Write Up -->
+						<div class="col-lg-7" style="text-align:justify; ">
+							<p id="property-name-1" style="font-size:15px; margin-bottom: 2px; ">Green View, Delhi</p>
+							<p id="user-review-1" style="font-size:12px; line-height: 16px;">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
+						</div>
+			 		</div>
+			 		<!-- Single Row for review -->
+			 		<div class="row" style="margin-bottom: 40px;">
+	            		<!-- Image Column -->
+						<div class="col-lg-2"> 
+							<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+							<!-- Reviews Star -->
+							<div id="stars" style="padding-top:0px; color: #fff600;">
+								<!-- Star Filled icon by Icons8 -->
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<!--star end-->
+							</div>
+						</div>
+						<!-- Information -->
+						<div class="col-lg-3" style="padding-left:15px; text-align:justify; ">
+							<p id="username-1" style="font-size:15px; " >Kunal Chaudhary</p>
+							<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+							<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes</p>
+							<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>2</kbd> Level</p>
+						</div>
+						<!-- Review Write Up -->
+						<div class="col-lg-7" style="text-align:justify; ">
+							<p id="property-name-1" style="font-size:15px; margin-bottom: 2px; ">Green View, Delhi</p>
+							<p id="user-review-1" style="font-size:12px; line-height: 16px;">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
+						</div>
+			 		</div>
+			 		<!-- Single Row for review -->
+			 		<div class="row" style="margin-bottom: 40px;">
+	            		<!-- Image Column -->
+						<div class="col-lg-2"> 
+							<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+							<!-- Reviews Star -->
+							<div id="stars" style="padding-top:0px; color: #fff600;">
+								<!-- Star Filled icon by Icons8 -->
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<!--star end-->
+							</div>
+						</div>
+						<!-- Information -->
+						<div class="col-lg-3" style="padding-left:15px; text-align:justify; ">
+							<p id="username-1" style="font-size:15px; " >Kunal Chaudhary</p>
+							<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+							<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes</p>
+							<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>2</kbd> Level</p>
+						</div>
+						<!-- Review Write Up -->
+						<div class="col-lg-7" style="text-align:justify; ">
+							<p id="property-name-1" style="font-size:15px; margin-bottom: 2px; ">Green View, Delhi</p>
+							<p id="user-review-1" style="font-size:12px; line-height: 16px;">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
+						</div>
+			 		</div>
+			    </div>
+		    </div>
+		    <div id="follow" class="tab-pane fade">
+			    <div class="panel-padding">
+			    	<div style="padding: 10px;">
+						<h3 style="text-transform: uppercase; margin: 0px;">Following Property</h3>
+						<hr style="border-top-color: #000; margin:5px 0px 30px 0px;">
 					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				
-			</div>
-		</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="thumbnail" style="padding: 0px;">
+								<div class="row background-follow1">
+									<div class="img-top-follow">
+										<div class="col-sm-4">
+											<img src="images/placeholder_image.jpg"  class="center-block img-responsive">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="thumbnail" style="padding: 0px;">
+								<div class="row background-follow2">
+									<div class="img-top-follow">
+										<div class="col-sm-4">
+											<img src="images/placeholder_image.jpg"  class="center-block img-responsive">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+		    </div>
+		    <div id="follower" class="tab-pane fade">
+			    <div class="panel-padding">
+
+			    </div>
+		    </div>
+		    <div id="fav" class="tab-pane fade">
+			   	<div class="panel-padding">
+
+			   	</div>
+		    </div>
+	  	</div>
+	</div>
+</div>
+
+
+
+		
+
+
+
+
+
+
 	</div>
 </div>
 

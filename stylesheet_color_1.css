@@ -2,8 +2,29 @@ html{
 
 }
 
-body{
+.btn.outline {
+    background: none;
+    padding: 7% auto;
+    
+}
+.btn-primary.outline {
+    border: 2px solid #27755a;
+    color: #27755a;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    border-color: rgb(39, 117, 90);
+    background-color: rgb(39, 117, 90);
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
 
+
+body{
+  overflow-x: hidden;
 }
 p{
   font-size: 12px;
@@ -23,26 +44,26 @@ small{
   background-color: white;
 }
 
+/*============================================================================ Navigation Bar*/
 #navbar-custom.navbar-default .navbar-brand {
     color: rgba(255, 255, 255, 1);
 }
 #navbar-custom.navbar-default {
     font-size: 12px;
-    background-color: #303F9F;
+    background-color: #27755a;
     border-bottom-width: 0px;
 }
 .navbar-city{
-  margin-top: 2px;
-  margin-right: 5px;
+  margin-top: 10px;
   padding: 5px 8px;
-  background-color: rgba(63, 81, 181, 0.82);
+  background-color: rgba(255,255,255, 0.3);
   display: block;
   list-style: none;
   border-radius: 10px;
-  color:  #1976D2;
+  color:  rgba(0, 173, 127, 1);
 }
 .navbar-city:hover{
-  color: #1976D2;
+  color: rgba(0, 212, 163, 1);
   background-color: #fff;
 }
 .drop-link{
@@ -50,7 +71,7 @@ small{
   text-decoration: none;
 }
 .drop-link:hover{
-  color: #1976D2;
+  color: rgba(0, 212, 163, 1);
   text-decoration: none;
 }
 .drop-link:focus{
@@ -58,18 +79,18 @@ small{
 }
 #navbar-custom.navbar-default .navbar-nav>li>a {
     color: rgba(255, 255, 255, 1);
-    background-color: #303F9F;
+    background-color: #27755a;
 }
 #navbar-custom.navbar-default .navbar-nav>li>a:hover,
 #navbar-custom.navbar-default .navbar-nav>li>a:focus {
-    color: #fff;
-    background-color: #3F51B5;
+    color: rgb(0, 212, 163);
+    background-color: rgb(38, 105, 82);
 }
 #navbar-custom.navbar-default .navbar-nav>.active>a,
 #navbar-custom.navbar-default .navbar-nav>.active>a:hover,
 #navbar-custom.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(66, 66, 66, 1);
-    background-color: #2196F3;
+    background-color: rgba(255, 255, 255, 1);
 }
 #navbar-custom.navbar-default .navbar-toggle {
     border-color: #ffffff;
@@ -85,8 +106,6 @@ small{
 #navbar-custom.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #00d4a3;
 }
-
-
 /*============================================================================ Button Head*/
 .btn-tool {
   border: none;
@@ -116,26 +135,6 @@ small{
   color: #11aef4;
   box-shadow: none;
  }
-
-#dropdown-city{
-  padding:6px;
-  padding-top:10px;
-  background-color:rgba(255, 255, 255, 0.9);
-  border:1px solid blue;
-  color:#1976D2;
-  margin-right: 10px;
-  border-radius:10px;
-  
-}
-
-#dropdown-city:focus{
-  color:#1976D2;
-}
-
-#dropdown-city:hover{
-  color:#1976D2;
-
-}
 
 /*============================================================*/
 
@@ -175,17 +174,8 @@ small{
   color: #fff;
 }
 
-#username-1{
-  font-size: 17px;
-}
 
-#property-name-1{
-  font-size: 17px;
-}
 
-#user-review-1{
-  font-size:12px;
-}
 /*==================================================================== Swiper*/
 .swiper-container {
         width: 100%;
@@ -217,7 +207,7 @@ small{
   letter-spacing: 2px;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #1976D2;
+  background-color: #27755a;
   transition:         0.08s ease-out;
   -o-transition:      0.08s ease-out;
   -ms-transition:     0.08s ease-out;
@@ -226,83 +216,25 @@ small{
 }
 
 .fill:hover {
-  color: #fff;
-  background-color: #1976D2;
-}
-.fill-1{
-   color:#fff;
-  background-color: #1976D2;
+  color: rgb(39, 117, 90);
+  background-color: #fff;
 }
 
-.fill-1:hover {
+ /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx button xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+ #dropdown-city:focus{
+  color:#49CC9F;
+
+}
+#dropdown-city:hover{
+  color:#49CC9F;
+}
+#query-btn:focus{
   color:#fff;
-  background-color: #1976D2;
+
+}
+#query-btn:hover{
+  color:#fff;
 }
 
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx vertical swiper xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-/***********************
-  OUTLINE BUTTONS
-************************/
-
-.btn.outline {
-    background: none;
-    padding: 7% auto;
-    
-}
-.btn-primary.outline {
-    border: 2px solid #1976D2;
-    color: #1976D2;
-}
-.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
-    color: #fff;
-    border-color: rgba(0, 212, 163, 1);
-    background-color: rgba(0, 212, 163, 1);
-}
-.btn-primary.outline:active, .btn-primary.outline.active {
-    border-color: #007299;
-    color: #007299;
-    box-shadow: none;
-}
-
-.sign-up-builder{
-  line-height: 58px;
-height: 58px;
-background: #FFF none repeat scroll 0% 0%;
-position: relative;
-margin-bottom: -1px;
-border: 1px solid #E6E6E6;
-transition: border 0.3s ease 0s, height 0.3s ease 0s;
-border-radius: 0px;
-}
-  
-.btn-search{
-  background-color:#3F51B5; 
-  border-radius: 2px; 
-  color:white; 
-  padding-left:20px; 
-  padding-right:20px;
-}
-.btn-search:hover{
-  color: white;
-}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/

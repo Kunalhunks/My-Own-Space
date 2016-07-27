@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Real-Estate</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+	<!-- User Embedded -->
+	<link rel="stylesheet" type="text/css" href="stylesheet_color_1.css">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<script type="text/javascript" src="javascript.js"></script>
+
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/936bbf24d4.js"></script>	
+
+	<!-- Swiper CSS & JS -->
+    <link rel="stylesheet" type="text/css" href="lib/css/swiper.min.css">
+    <script src="lib/js/swiper.min.js"></script>
+
+<style type="text/css">
+	
+.swiper-container {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    .swiper-slide {
+    	background-color: transparent;
+        font-size: 18px;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+</style>
+
+</head>
+
+<body>
+<!-- ========================================================================================================= -->
+<!-- navbar -->
+	<div class="navbar navbar-default navbar-fixed-top" id="navbar-custom">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">REALESTATE</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="navbar-city pull-left">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle drop-link" id="dropdown-city" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Select City <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Ghaziabad</a></li>
+            <li><a href="#">Faridabad</a></li>
+            <li><a href="#">Gautam Buddha Nagar</a></li>
+            <li><a href="#">Noida</a></li>
+            <li><a href="#">Gurgaon</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+      		<div class="search-bar">
+				<div class="col-lg-6 col-lg-offset-1" style="padding-top:8px; ">
+   					<div class="input-group" >
+     					  <input type="text" class="form-control" placeholder="Project name, Location, Builder..">
+
+     				 	  <span class="input-group-btn">
+      			 		  <button class="btn" type="button"style="background-color:#49CC9F; border-radius: 2px; color:white; ">Search</button>
+    					  </span>
+    					  <!-- Dropdown -->
+    					  
+   				 	</div><!-- /input-group -->
+  				</div><!-- /.col-lg-6 -->
+			</div><!--row end-->
+      </ul>
+	  <ul class="nav navbar-nav navbar-right" style="margin-top:-10px;">
+        <li><a href="#">News</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</div><!--navbar end-->
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx modal xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content"  style="border-radius: 0px;">    
+		    	<div class="modal-body">
+		    		<div class="row">
+		    			<div class="col-lg-5">
+		    				<img src="images\house.jpg" style="width:240px; height:400px; margin-left:-30px; margin-bottom:-15px;">
+		    			</div>
+		    			<div class="col-lg-7" >
+		    				<div id="close-modal">
+		    						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    				</div>
+		    				<div class="contents" style="padding-top:65px;">
+		    					
+		    					<div class="row text-center">
+		        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color: #DD4B39; margin-bottom:10px;"><i class="fa fa-google-plus" aria-hidden="true" style="padding-right:10px;"></i> Connect with Google+</button>
+
+		        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color: #3B5998; margin-bottom:10px;"><i class="fa fa-facebook" aria-hidden="true" style="padding-right:10px;"></i> Connect with Facebook</button>
+		        				</div>
+		        				<div class="row text-center">
+		        					<p style="color:#999; margin:10px 0px;">or use your email address</p>
+		        				</div>
+		        				<div class="row text-center">
+		        					<div class="col-sm-12">
+			        					<button type="button" class="btn" data-toggle="modal" data-target="#myModal-login" id="modal-login" style="border-radius:2px; width:255px; color:white; background-color: #27755a; margin-bottom:10px; margin:10px 0px;">Login</button>
+			        				</div>	
+			        				<div class="col-sm-12">
+			        					<button type="button" class="btn" data-toggle="modal" data-target="#myModal-signup" style="border-radius:2px; width:255px; color:#27755a; background-color: white; margin-bottom:10px; border:1px solid darkgreen;">Sign Up</button>
+			        				</div>
+			        				<div class="col-sm-12">
+			        					<button type="button" class="btn" data-toggle="modal" data-target="#myModal-builder" style="border-radius:2px; width:255px; color: #27755a; background-color: white; margin-bottom:10px; border:1px solid darkgreen">Sign Up as Builder</button>
+			        				</div>
+		        				</div>
+
+
+		        			</div>	
+		        		</div>	
+		        	</div>	
+			    </div>
+		   </div>
+		  </div>
+		</div>
+		<!-- modal end -->
+		<!-- Modal-login -->
+		<div class="modal fade" id="myModal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-left:-14px;">
+
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content"  style="border-radius: 0px;">    
+
+		    	<div class="modal-body">
+		    		<div class="row">
+		    			<div class="col-lg-5">
+		    				<img src="images\house.jpg" style="width:240px; height:400px; margin-left:-30px; margin-bottom:-15px;">
+		    			</div>
+		    			<div class="col-lg-7" >
+		    				<div id="close-modal">
+		    						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    				</div>
+		    				<div class="contents" style="padding-top:90px;">
+		    					<div class="row text-center">
+		        					  <input type="text" class="form-control" id="sign-up-builder" placeholder="EMAIL" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">
+			    		   			  <input type="text" class="form-control" id="sign-up-builder" placeholder="PASSWORD" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">
+			        				
+		        				</div>
+			        				<div style="padding:20px 0px; float:right;" class="center-block">
+											<button class="btn button fill" style="padding:10px 20px;">LOGIN</button>	
+									</div>
+		        			</div>	
+		        		</div>	
+		        	</div>	
+			    </div>
+		   </div>
+		  </div>
+		</div>
+
+		<!-- modal end -->
+		<!-- Modal-signup -->
+		<div class="modal fade" id="myModal-signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content"  style="border-radius: 0px;">    
+		    	<div class="modal-body">
+		    		<div class="row">
+		    			<div class="col-lg-5">
+		    				<img src="images\house.jpg" style="width:240px; height:400px; margin-left:-30px; margin-bottom:-15px;">
+		    			</div>
+		    			<div class="col-lg-7" >
+		    				<div id="close-modal">
+		    						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    				</div>
+		    				<div class="contents" style="padding-top:40px">
+		    					<div class="row text-center">
+		        					 <input type="text" class="form-control" id="sign-up-builder" placeholder="NAME" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">
+			    		   			  <input type="text" class="form-control" id="sign-up-builder" placeholder="EMAIL" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">
+			    					  <input type="text" class="form-control" id="sign-up-builder" placeholder="PASSWORD" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">
+
+		    					</div>
+		    						<div style="padding:20px 0px; float:right;" class="center-block">
+										<button class="btn button fill" style="padding:10px 20px;">SIGNUP</button>	
+									</div>
+		        			</div>	
+		        		</div>	
+		        	</div>	
+			    </div>
+		   </div>
+		  </div>
+		</div>
+		<!-- modal end -->
+		<!-- Modal-builder -->
+		<div class="modal fade" id="myModal-builder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content"  style="border-radius: 0px;">    
+		    	<div class="modal-body">
+		    		<div class="row">
+		    			<div class="col-lg-5">
+		    				<img src="images\house.jpg" style="width:240px; height:400px; margin-left:-30px; margin-bottom:-15px;">
+		    			</div>
+		    			<div class="col-lg-7" >
+		    				<div id="close-modal">
+		    						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    				</div>
+		    				<div class="contents" style="padding-top:40px;">
+		    					<div class="row text-center">
+			    					  <input type="text" class="form-control" id="sign-up-builder" placeholder="NAME" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">
+			    		   			  <input type="text" class="form-control" id="sign-up-builder" placeholder="EMAIL" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">
+			    					  <input type="text" class="form-control" id="sign-up-builder" placeholder="COMPANY REG NUMBER" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">
+			    					  <input type="text" class="form-control" id="sign-up-builder" placeholder="ESTABLISHMENT YEAR" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">
+			    					  <input type="text" class="form-control" id="sign-up-builder" placeholder="CONTACT" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">
+										 <input type="text" class="form-control" id="sign-up-builder" placeholder="PASSWORD" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;
+												box-shadow: none;">		
+		    					</div>
+			        					<div style="padding:20px 0px; float:right;" class="center-block">
+										<button class="btn button fill" style="padding:10px 20px;">SIGNUP</button>	
+										</div>
+				        		</div>	
+		        		</div>	
+		        	</div>	
+			    </div>
+		   </div>
+		  </div>
+		</div>
+		<!-- modal end -->
+
+
+
+
+		<!-- Modal-builder -->
+		<div class="modal fade" id="myModal-builder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content"  style="border-radius: 0px;">    
+		    	<div class="modal-body">
+		    		<div class="row">
+		    			<div class="col-lg-5">
+		    				<img src="images\house.jpg" style="width:240px; height:400px; margin-left:-30px; margin-bottom:-15px;">
+		    			</div>
+		    			<div class="col-lg-7" >
+		    				<div class="contents" style="">
+		    					<div class="row text-center">
+			    					  <input type="text" class="form-control" id="sign-up-builder" placeholder="NAME" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;">
+			    		   			  <input type="text" class="form-control" id="sign-up-builder" placeholder="EMAIL" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;">
+			    					  <input type="text" class="form-control" id="sign-up-builder" placeholder="COMPANY REG NUMBER" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;">
+			    					  <input type="text" class="form-control" id="sign-up-builder" placeholder="ESTABLISHMENT YEAR" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;">
+			    					  <input type="text" class="form-control" id="sign-up-builder" placeholder="CONTACT" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;">
+										 <input type="text" class="form-control" id="sign-up-builder" placeholder="PASSWORD" aria-describedby="basic-addon1" style="  line-height: 58px;
+												height: 58px;
+												background: #FFF none repeat scroll 0% 0%;
+												position: relative;
+												margin-bottom: -1px;
+												border: 1px solid #E6E6E6;
+												transition: border 0.3s ease 0s, height 0.3s ease 0s;
+												border-radius: 0px;">		
+		    					</div>
+			        					<div style="padding:20px 0px; float:right;" class="center-block">
+										<button class="btn button fill" style="padding:10px 20px;">SIGNUP</button>	
+										</div>
+				        		</div>	
+		        		</div>	
+		        	</div>	
+			    </div>
+		   </div>
+		  </div>
+		</div>
+		<!-- modal end -->
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+		<div class="container-fluid text-center" style=" padding-top:50px; background-color: #333; color:white; letter-spacing: 3px;">
+			<h2>Lorem ipsum dolor sit amet, te aperiri labitur eum.</h2>
+		</div>
+
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row" style="padding-top:50px;">
+					<div class="col-lg-2">
+						<img src="images\p2.jpg" class="img-thumbnail" alt="Cinque Terre" >
+					</div>
+					<div class="col-lg-10">
+						<h2 style="margin:0px auto;">Street View, Delhi</h2><br>
+						<p style="margin:0px auto;">Lorem ipsum dolor sit amet, eum accusamus interesset in. Pri tractatos deterruisset ut. In his oblique consulatu, dicunt incorrupte vim in, an duo dicam primis possit. Sed ex omnis causae, erat eripuit eum et.
+						</p>
+
+							 <div class="dropdown pull-right" style="padding:0px 0px 0px 15px; ">
+							    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="border-radius: 0px; background-color:#27755a; color:white; ">Last visited on
+							    <span class="caret"></span></button>
+							    <ul class="dropdown-menu">
+							      <li><a href="#">date</a></li>
+							      <li><a href="#">date</a></li>
+							      <li><a href="#">date</a></li>
+							    </ul>
+							  </div>					
+					</div>
+					<div class="col-lg-5"></div>
+				</div>
+
+				<div class="row" style="padding:30px 0px 0px 0px;">
+				<fieldset>
+					<div class="col-lg-7">
+						<p style="padding-left:10px;">Your rating of this property based on certain parameters.</p>
+							<div class="row">
+								<div class="col-lg-3"  style="padding-left:0px;"> 
+									<div class="connectivity">
+										<p class="lead"><span style="padding: 0px 0px 0px 10px;">Connectivity</span> </p>
+									</div>
+								</div>	
+								<div class="col-lg-9">
+									<span class="lead">
+										<span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span>
+									</span>	
+								</div>		
+							</div>
+							<div class="row">
+								<div class="col-lg-3" style="padding-left:0px;">
+									<div class="livability">
+										<p class="lead"><span style="padding: 0px 0px 0px 10px;">Livability</span> </p>
+									</div>
+								</div>	
+								<div class="col-lg-9">
+									<span class="lead">
+										<span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span>
+									</span>	
+								</div>		
+							</div>
+							<div class="row">
+								<div class="col-lg-3" style="padding-left:0px;">
+									<div class="lifestyle">
+										<p class="lead"><span style="padding: 0px 0px 0px 10px;">Lifestyle</span> </p>
+									</div>
+								</div>	
+								<div class="col-lg-9">
+									<span class="lead">
+										<span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span>
+									</span>	
+								</div>		
+							</div>
+							<div class="row">
+								<div class="col-lg-3" style="padding-left:0px;">
+									<div class="amenities" >
+										<p class="lead"><span style="padding: 0px 0px 0px 10px;">Amenities</span> </p>
+									</div>
+								</div>	
+								<div class="col-lg-9">
+									<span class="lead">
+										<span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span>
+									</span>	
+								</div>		
+							</div>	
+
+							<!-- Review section -->
+							<div class="row">
+								<div class="form-group" style="padding:10px 0px 0px 15px;">
+  									<label for="usr">Title of your review</label>
+  									<input type="text" class="form-control" id="usr">
+								</div>
+								<!-- tooltips -->
+									<div class="container">
+									  <ul class="list-inline">
+									    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, eum accusamus interesset in. Pri tractatos deterruisset ut. In his oblique consulatu, dicunt incorrupte vim in, an duo dicam primis possit. Sed ex omnis causae, erat eripuit eum et." >Tips for a great review</a></li>
+									  </ul>
+									</div>
+								<!-- tooltip end -->
+									<script>
+									$(document).ready(function(){
+									    $('[data-toggle="tooltip"]').tooltip();
+									});
+									</script>
+
+								<div class="form-group" style="padding:10px 0px 0px 15px;">
+  									<label for="comment">Your Review</label>
+ 									<textarea class="form-control" rows="3" id="comment"></textarea>
+								</div>	
+														
+							</div>
+							<!-- Review section ends-->
+								
+
+					
+							<div style="padding: 40px 0px 40px 15px;  align:right;">
+								<button type="button" class="btn" style="padding:10px 15px 10px 15px; border-radius:0px; background-color: #27755a; color:white;">Submit your review</button>
+							</div>
+					</div>	 <!-- col-lg-7 end -->
+				</fieldset>	
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx reviews xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+					<div class="col-lg-5">
+						
+		
+			 <div class="row">
+			 	<!-- Vertical Scroll Region  -->
+			 	<div class="col-sm-12"  style="padding-right:0px;">
+			 		<h5 style="margin:0px;">SOME</h5>
+					<h3 style="text-transform: uppercase; margin: 0px;">Recent Reviews</h3>
+					<hr style="border-top-color: #000; margin:5px 0px 30px 0px;">
+					
+				 	<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Vertical Scrolling Start -->
+				 	<div class="swiper-container" >
+				        <div class="swiper-wrapper" style="height: 480px;">
+				            <div class="swiper-slide">
+
+
+			 					<!-- Single Row for review -->
+						 		<div class="row" >
+					            	<div class="col-sm-12">
+										<div class="col-lg-3"> 
+											<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										</div>
+										<div class="col-lg-4" style="padding-left:20px; color:white; text-align:justify; ">
+											<p id="username-1" style="font-size:14px; color:#333;" >Kunal Ch.</p>
+											<p id="no-of-review-1" style="font-size:11px;line-height:70%;color:#333; "><kbd>180</kbd> Reviews</p>
+											<p id="no-of-review-1" style="font-size:11px; line-height:70%;color:#333;"><kbd>34</kbd> Likes</p>
+											<div id="stars" style="padding-top:0px; color:yellow;">
+												<!-- Star Filled icon by Icons8 -->
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<!--star end-->
+											</div>
+										</div>
+										<div class="col-lg-5" style="color:#333; text-align:justify; ">
+											<p id="property-name-1" style="font-size:14px;">Green View, Delhi</p>
+											<p id="user-review-1" style="font-size:11px;">
+												Lorem ipsum dolor sit amet, te aperiri labitur eum.</p>
+										</div>
+									</div>
+								</div>	
+											 					<!-- Single Row for review -->
+						 		<div class="row" style="padding-top:40px;">
+					            	<div class="col-sm-12">
+										<div class="col-lg-3"> 
+											<img src="images/profile2.jpg" class="img-circle" width="80" height="80">
+										</div>
+										<div class="col-lg-4" style="padding-left:20px; color:white; text-align:justify; ">
+											<p id="username-1" style="font-size:14px; color:#333;" >Kunal Ch.</p>
+											<p id="no-of-review-1" style="font-size:11px;line-height:70%;color:#333; "><kbd>180</kbd> Reviews</p>
+											<p id="no-of-review-1" style="font-size:11px; line-height:70%;color:#333;"><kbd>34</kbd> Likes</p>
+											<div id="stars" style="padding-top:0px; color:yellow;">
+												<!-- Star Filled icon by Icons8 -->
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<!--star end-->
+											</div>
+										</div>
+										<div class="col-lg-5" style="color:#333; text-align:justify; ">
+											<p id="property-name-1" style="font-size:14px;">Green View, Delhi</p>
+											<p id="user-review-1" style="font-size:11px;">
+												Lorem ipsum dolor sit amet, te aperiri labitur eum.</p>
+										</div>
+									</div>
+								</div>	
+											 					<!-- Single Row for review -->
+						 		<div class="row" style="padding-top:40px;">
+					            	<div class="col-sm-12">
+										<div class="col-lg-3"> 
+											<img src="images/profile3.jpg" class="img-circle" width="80" height="80">
+										</div>
+										<div class="col-lg-4" style="padding-left:20px; color:white; text-align:justify; ">
+											<p id="username-1" style="font-size:14px; color:#333;" >Kunal Ch.</p>
+											<p id="no-of-review-1" style="font-size:11px;line-height:70%;color:#333; "><kbd>180</kbd> Reviews</p>
+											<p id="no-of-review-1" style="font-size:11px; line-height:70%;color:#333;"><kbd>34</kbd> Likes</p>
+											<div id="stars" style="padding-top:0px; color:yellow;">
+												<!-- Star Filled icon by Icons8 -->
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<!--star end-->
+											</div>
+										</div>
+										<div class="col-lg-5" style="color:#333; text-align:justify; ">
+											<p id="property-name-1" style="font-size:14px;">Green View, Delhi</p>
+											<p id="user-review-1" style="font-size:11px;">
+												Lorem ipsum dolor sit amet, te aperiri labitur eum.</p>
+										</div>
+									</div>
+								</div>	
+											 					<!-- Single Row for review -->
+						 		<div class="row" style="padding-top:40px;">
+					            	<div class="col-sm-12">
+										<div class="col-lg-3"> 
+											<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										</div>
+										<div class="col-lg-4" style="padding-left:20px; color:white; text-align:justify; ">
+											<p id="username-1" style="font-size:14px; color:#333;" >Kunal Ch.</p>
+											<p id="no-of-review-1" style="font-size:11px;line-height:70%;color:#333; "><kbd>180</kbd> Reviews</p>
+											<p id="no-of-review-1" style="font-size:11px; line-height:70%;color:#333;"><kbd>34</kbd> Likes</p>
+											<div id="stars" style="padding-top:0px; color:yellow;">
+												<!-- Star Filled icon by Icons8 -->
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<!--star end-->
+											</div>
+										</div>
+										<div class="col-lg-5" style="color:#333; text-align:justify; ">
+											<p id="property-name-1" style="font-size:14px;">Green View, Delhi</p>
+											<p id="user-review-1" style="font-size:11px;">
+												Lorem ipsum dolor sit amet, te aperiri labitur eum.</p>
+										</div>
+									</div>
+								</div>	
+											 					<!-- Single Row for review -->
+						 		<div class="row" style="padding-top:40px;">
+					            	<div class="col-sm-12">
+										<div class="col-lg-3"> 
+											<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										</div>
+										<div class="col-lg-4" style="padding-left:20px; color:white; text-align:justify; ">
+											<p id="username-1" style="font-size:14px; color:#333;" >Kunal Ch.</p>
+											<p id="no-of-review-1" style="font-size:11px;line-height:70%;color:#333; "><kbd>180</kbd> Reviews</p>
+											<p id="no-of-review-1" style="font-size:11px; line-height:70%;color:#333;"><kbd>34</kbd> Likes</p>
+											<div id="stars" style="padding-top:0px; color:yellow;">
+												<!-- Star Filled icon by Icons8 -->
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<!--star end-->
+											</div>
+										</div>
+										<div class="col-lg-5" style="color:#333; text-align:justify; ">
+											<p id="property-name-1" style="font-size:14px;">Green View, Delhi</p>
+											<p id="user-review-1" style="font-size:11px;">
+												Lorem ipsum dolor sit amet, te aperiri labitur eum.</p>
+										</div>
+									</div>
+								</div>	
+											 					<!-- Single Row for review -->
+						 		<div class="row" style="padding-top:40px;">
+					            	<div class="col-sm-12">
+										<div class="col-lg-3"> 
+											<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										</div>
+										<div class="col-lg-4" style="padding-left:20px; color:white; text-align:justify; ">
+											<p id="username-1" style="font-size:14px; color:#333;" >Kunal Ch.</p>
+											<p id="no-of-review-1" style="font-size:11px;line-height:70%;color:#333; "><kbd>180</kbd> Reviews</p>
+											<p id="no-of-review-1" style="font-size:11px; line-height:70%;color:#333;"><kbd>34</kbd> Likes</p>
+											<div id="stars" style="padding-top:0px; color:yellow;">
+												<!-- Star Filled icon by Icons8 -->
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<!--star end-->
+											</div>
+										</div>
+										<div class="col-lg-5" style="color:#333; text-align:justify; ">
+											<p id="property-name-1" style="font-size:14px;">Green View, Delhi</p>
+											<p id="user-review-1" style="font-size:11px;">
+												Lorem ipsum dolor sit amet, te aperiri labitur eum.</p>
+										</div>
+									</div>
+								</div>	
+											 					<!-- Single Row for review -->
+						 		<div class="row" style="padding-top:40px;">
+					            	<div class="col-sm-12">
+										<div class="col-lg-3"> 
+											<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										</div>
+										<div class="col-lg-4" style="padding-left:20px; color:white; text-align:justify; ">
+											<p id="username-1" style="font-size:14px; color:#333;" >Kunal Ch.</p>
+											<p id="no-of-review-1" style="font-size:11px;line-height:70%;color:#333; "><kbd>180</kbd> Reviews</p>
+											<p id="no-of-review-1" style="font-size:11px; line-height:70%;color:#333;"><kbd>34</kbd> Likes</p>
+											<div id="stars" style="padding-top:0px; color:yellow;">
+												<!-- Star Filled icon by Icons8 -->
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<!--star end-->
+											</div>
+										</div>
+										<div class="col-lg-5" style="color:#333; text-align:justify; ">
+											<p id="property-name-1" style="font-size:14px;">Green View, Delhi</p>
+											<p id="user-review-1" style="font-size:11px;">
+												Lorem ipsum dolor sit amet, te aperiri labitur eum.</p>
+										</div>
+									</div>
+								</div>	
+											 					<!-- Single Row for review -->
+						 		<div class="row" style="padding-top:40px;">
+					            	<div class="col-sm-12">
+										<div class="col-lg-3"> 
+											<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										</div>
+										<div class="col-lg-4" style="padding-left:20px; color:white; text-align:justify; ">
+											<p id="username-1" style="font-size:14px; color:#333;" >Kunal Ch.</p>
+											<p id="no-of-review-1" style="font-size:11px;line-height:70%;color:#333; "><kbd>180</kbd> Reviews</p>
+											<p id="no-of-review-1" style="font-size:11px; line-height:70%;color:#333;"><kbd>34</kbd> Likes</p>
+											<div id="stars" style="padding-top:0px; color:yellow;">
+												<!-- Star Filled icon by Icons8 -->
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<!--star end-->
+											</div>
+										</div>
+										<div class="col-lg-5" style="color:#333; text-align:justify; ">
+											<p id="property-name-1" style="font-size:14px;">Green View, Delhi</p>
+											<p id="user-review-1" style="font-size:11px;">
+												Lorem ipsum dolor sit amet, te aperiri labitur eum.</p>
+										</div>
+									</div>
+								</div>	
+											 					<!-- Single Row for review -->
+						 		<div class="row" style="padding-top:40px;">
+					            	<div class="col-sm-12">
+										<div class="col-lg-3"> 
+											<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										</div>
+										<div class="col-lg-4" style="padding-left:20px; color:white; text-align:justify; ">
+											<p id="username-1" style="font-size:14px; color:#333;" >Kunal Ch.</p>
+											<p id="no-of-review-1" style="font-size:11px;line-height:70%;color:#333; "><kbd>180</kbd> Reviews</p>
+											<p id="no-of-review-1" style="font-size:11px; line-height:70%;color:#333;"><kbd>34</kbd> Likes</p>
+											<div id="stars" style="padding-top:0px; color:yellow;">
+												<!-- Star Filled icon by Icons8 -->
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<!--star end-->
+											</div>
+										</div>
+										<div class="col-lg-5" style="color:#333; text-align:justify; ">
+											<p id="property-name-1" style="font-size:14px;">Green View, Delhi</p>
+											<p id="user-review-1" style="font-size:11px;">
+												Lorem ipsum dolor sit amet, te aperiri labitur eum.</p>
+										</div>
+									</div>
+								</div>	
+											 					<!-- Single Row for review -->
+						 		<div class="row" style="padding-top:40px;">
+					            	<div class="col-sm-12">
+										<div class="col-lg-3"> 
+											<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										</div>
+										<div class="col-lg-4" style="padding-left:20px; color:white; text-align:justify; ">
+											<p id="username-1" style="font-size:14px; color:#333;" >Kunal Ch.</p>
+											<p id="no-of-review-1" style="font-size:11px;line-height:70%;color:#333; "><kbd>180</kbd> Reviews</p>
+											<p id="no-of-review-1" style="font-size:11px; line-height:70%;color:#333;"><kbd>34</kbd> Likes</p>
+											<div id="stars" style="padding-top:0px; color:yellow;">
+												<!-- Star Filled icon by Icons8 -->
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<!--star end-->
+											</div>
+										</div>
+										<div class="col-lg-5" style="color:#333; text-align:justify; ">
+											<p id="property-name-1" style="font-size:14px;">Green View, Delhi</p>
+											<p id="user-review-1" style="font-size:11px;">
+												Lorem ipsum dolor sit amet, te aperiri labitur eum.</p>
+										</div>
+									</div>
+								</div>	
+							
+						<!-- Add Scroll Bar -->
+        				<div class="swiper-scrollbar"></div>
+					</div>
+					<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Vertical Scrolling End -->
+					<script>
+				    var swiper = new Swiper('.swiper-container', {
+				        scrollbar: '.swiper-scrollbar',
+				        direction: 'vertical',
+				        slidesPerView: 'auto',
+				        mousewheelControl: true,
+				        freeMode: true,
+				        scrollbarDraggable: true
+				    });
+				    </script>
+			 	</div>
+			</div>			
+		  </div>		
+	    </div>
+	  </div>							
+	</div>
+	</div>
+	</div>
+			
+
+
+<!--footer-->
+
+<div class="container-fluid" style="background-color: #424242; color: #adadad; padding: 60px 0px;" >
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<h4 style="font-weight: 600;padding: 10px 0px;">Contact Us</h4>
+				<p style="margin-bottom: 1px;"><b>Call Us:</b> +9876543210</p>
+				<p style="margin-bottom: 1px;"><b>Email:</b> contact@myownspace.com</p>
+				<p style="margin-bottom: 1px;">or</p>
+				<p style="margin-bottom: 1px;"><b>Skype:</b> myownspace</p>
+			</div>
+			<div class="col-sm-3" >
+				<h4 style="font-weight: 600;padding: 10px 0px;">Follow Us</h4>
+				<p style="margin-bottom: 1px; font-size: 30px;" ><span class="fa fa-facebook-square" style="padding: 2px 10px;"></span><span  style="padding: 2px 10px;" class="fa fa-google-plus-square"></span><span  style="padding: 2px 10px;" class="fa fa-twitter-square"></span></span><span  style="padding: 2px 10px;" class="fa fa-linkedin-square"></span></p>
+				<p style="margin-bottom: 1px; font-size: 30px;"><span class="fa fa-behance-square" style="padding: 2px 10px;"></span><span  style="padding: 2px 10px;" class="fa fa-get-pocket"></span><span  style="padding: 2px 10px;" class="fa fa-git-square"></span></span><span  style="padding: 2px 10px;" class="fa fa-glide"></span></p>
+			</div>
+			<div class="col-sm-3">
+				<h4 style="font-weight: 600;padding: 10px 0px;">Mailing List</h4>
+				<input class="textbox"type="text" placeholder="Enter Your E-mail ID"> 
+			</div>
+			<div class="col-sm-3">
+				<h4 style="font-weight: 600;padding: 10px 0px;">Expertise</h4>
+				<p style="margin-bottom: 1px;">www.expertise.com</p>
+				<p style="margin-bottom: 1px;">www.builderbuild.com</p>
+				<p style="margin-bottom: 1px;">www.enterprisebuilder.com</p>
+				<p style="margin-bottom: 1px;">www.housingproject.com</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid text-center" style="background-color: #191919; padding: 30px 0px;">
+	<div class="col-sm-12">
+		<span style="  color: #808080; font-size: 12px;">
+	        Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2016 My Own Space  .  All Rights Reserved  .  Terms of Services  .  Privacy Policy  .  Site Map
+	    </span>
+	</div>    
+</div>
+
+</body>

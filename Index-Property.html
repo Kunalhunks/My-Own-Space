@@ -128,13 +128,10 @@
 		        				</div>
 		        				<div class="row text-center">
 		        					<div class="col-sm-12">
-			        					<button type="button" class="btn" data-toggle="modal" data-target="#myModal-login" id="modal-login" style="border-radius:2px; width:255px; color:white; background-color: #27755a; margin-bottom:10px; margin:10px 0px;">Login</button>
+			        					<button type="button" class="btn" data-toggle="modal" data-target="#myModal-login" id="modal-login" style="border-radius:2px; width:255px; color:white; background-color: #1976D2; margin-bottom:10px; margin:10px 0px;">Login</button>
 			        				</div>	
 			        				<div class="col-sm-12">
-			        					<button type="button" class="btn" data-toggle="modal" data-target="#myModal-signup" style="border-radius:2px; width:255px; color:#27755a; background-color: white; margin-bottom:10px; border:1px solid darkgreen;">Sign Up</button>
-			        				</div>
-			        				<div class="col-sm-12">
-			        					<button type="button" class="btn" data-toggle="modal" data-target="#myModal-builder" style="border-radius:2px; width:255px; color: #27755a; background-color: white; margin-bottom:10px; border:1px solid darkgreen">Sign Up as Builder</button>
+			        					<button type="button" class="btn" data-toggle="modal" data-target="#myModal-signup" style="border-radius:2px; width:255px; color:#1976D2; background-color: white; margin-bottom:10px; border:1px solid #1976D2;">Sign Up</button>
 			        				</div>
 		        				</div>
 
@@ -147,6 +144,10 @@
 		  </div>
 		</div>
 		<!-- modal end -->
+
+		
+
+
 		<!-- Modal-login -->
 		<div class="modal fade" id="myModal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-left:-14px;">
 
@@ -542,9 +543,12 @@
 					
 					<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx review pages xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
-								 					<!-- Single Row for review -->
-						 		<div class="row" style="margin-bottom: 40px;">
-				            		<!-- Image Column -->
+
+
+									<!-- Single Row for review -->
+						 		<div class="row thumbnail" style="margin-bottom: 40px;">
+				            		<div style="padding: 10px;">
+				            			<!-- Image Column -->
 									<div class="col-lg-2"> 
 										<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
 										<!-- Reviews Star -->
@@ -573,96 +577,234 @@
 									</div>
 
 									<div class="row" style="color:#2196F3; padding:7px;" >
-										<div class="col-sm-12 " style="height:25px; background-color:white;">
-											<span style="padding:5px; padding-left:15px; margin: 0px" class="btn-link">Helpful</span><span style=" padding-left:10px;" class="btn-link">Say Thanks</span>
-											 <span style="padding-left:10px;" class="btn-link">Innapropriate</span> 
-											<span style=" padding-left:10px;" class="btn-link">Comment</span> 
-											<span class="pull-right"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i> Wednesday, April 18, 2016</span></h6>
-											
-										</div>		 
+											<span class="pull-right" style="margin-top: -5px;"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i> Wednesday, April 18, 2016</span></h6>
 									</div>
-
-						 		</div>			 					<!-- Single Row for review -->
-						 		<div class="row" style="margin-bottom: 40px;">
-				            		<!-- Image Column -->
-									<div class="col-lg-2"> 
-										<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
-										<!-- Reviews Star -->
-										<div id="stars" style="padding-top:0px; color: #fff600;">
-											<!-- Star Filled icon by Icons8 -->
-											<span class="glyphicon glyphicon-star"></span>
-											<span class="glyphicon glyphicon-star"></span>
-											<span class="glyphicon glyphicon-star"></span>
-											<span class="glyphicon glyphicon-star"></span>
-											<span class="glyphicon glyphicon-star"></span>
-											<!--star end-->
+									<div class="row review-log">
+										<span class="btn log button">Helpful</span>
+										<span class="btn log button">Say Thanks</span>
+										<span class="btn log button">Innapropriate</span>
+										<span class="btn log button pull-right" data-toggle="collapse" data-target="#comment1">Comment<p class="caret" style="font-size: 5px; margin:0px 6px;"></p></span>
+									</div>
+									<div id="comment1" class="collapse">
+										<div class=" row thumbnail">
+										    <div class="col-md-1" style="padding: 0px;">
+										    	<img src="images/placeholder_image.jpg" class="img-responsive">
+										    </div>
+										    <div class="col-md-11" style="padding: 8px;">
+										    	<input class="textbox-comment" type="text" placeholder="Write a comment..."> 
+										    </div>
 										</div>
 									</div>
-									<!-- Information -->
-									<div class="col-lg-3" style="padding-left:15px; text-align:justify; ">
-										<p id="username-1" style="font-size:15px; " >Kunal Chaudhary</p>
-										<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
-										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes</p>
-										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>2</kbd> Level</p>
-									</div>
-									<!-- Review Write Up -->
-									<div class="col-lg-7" style="text-align:justify; ">
-										<p id="property-name-1" style="font-size:15px; margin-bottom: 2px; ">Green View, Delhi</p>
-										<p id="user-review-1" style="font-size:12px; line-height: 16px;">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
-									</div>
-
-									<div class="row" style="color:#2196F3; padding:7px;" >
-										<div class="col-sm-12 " style="height:25px; background-color:white;">
-											<span style="padding:5px; padding-left:15px; margin: 0px" class="btn-link">Helpful</span><span style=" padding-left:10px;" class="btn-link">Say Thanks</span>
-											 <span style="padding-left:10px;" class="btn-link">Innapropriate</span> 
-											<span style=" padding-left:10px;" class="btn-link">Comment</span> 
-											<span class="pull-right"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i> Wednesday, April 18, 2016</span></h6>
-											
-										</div>		 
-									</div>
-
-						 		</div>			 					<!-- Single Row for review -->
-						 		<div class="row" style="margin-bottom: 40px;">
-				            		<!-- Image Column -->
-									<div class="col-lg-2"> 
-										<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
-										<!-- Reviews Star -->
-										<div id="stars" style="padding-top:0px; color: #fff600;">
-											<!-- Star Filled icon by Icons8 -->
-											<span class="glyphicon glyphicon-star"></span>
-											<span class="glyphicon glyphicon-star"></span>
-											<span class="glyphicon glyphicon-star"></span>
-											<span class="glyphicon glyphicon-star"></span>
-											<span class="glyphicon glyphicon-star"></span>
-											<!--star end-->
-										</div>
-									</div>
-									<!-- Information -->
-									<div class="col-lg-3" style="padding-left:15px; text-align:justify; ">
-										<p id="username-1" style="font-size:15px; " >Kunal Chaudhary</p>
-										<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
-										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes</p>
-										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>2</kbd> Level</p>
-									</div>
-									<!-- Review Write Up -->
-									<div class="col-lg-7" style="text-align:justify; ">
-										<p id="property-name-1" style="font-size:15px; margin-bottom: 2px; ">Green View, Delhi</p>
-										<p id="user-review-1" style="font-size:12px; line-height: 16px;">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
-									</div>
-										<div class="row" style="color:#2196F3; padding:7px;" >
-										<div class="col-sm-12 " style="height:25px; background-color:white;">
-											<span style="padding:5px; padding-left:15px; margin: 0px" class="btn-link">Helpful</span><span style=" padding-left:10px;" class="btn-link">Say Thanks</span>
-											 <span style="padding-left:10px;" class="btn-link">Innapropriate</span> 
-											<span style=" padding-left:10px;" class="btn-link">Comment</span> 
-											<span class="pull-right"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i> Wednesday, April 18, 2016</span></h6>
-											
-										</div>		 
-									</div>
+				            		</div>
 						 		</div>
+						 						<!-- Single Row for review -->
+						 		<div class="row thumbnail" style="margin-bottom: 40px;">
+				            		<div style="padding: 10px;">
+				            			<!-- Image Column -->
+									<div class="col-lg-2"> 
+										<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										<!-- Reviews Star -->
+										<div id="stars" style="padding-top:0px; color: #fff600;">
+											<!-- Star Filled icon by Icons8 -->
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<!--star end-->
+										</div>
+									</div>
+									<!-- Information -->
+									<div class="col-lg-3" style="padding-left:15px; text-align:justify; ">
+										<p id="username-1" style="font-size:15px; " >Kunal Chaudhary</p>
+										<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>2</kbd> Level</p>
+									</div>
+									<!-- Review Write Up -->
+									<div class="col-lg-7" style="text-align:justify; ">
+										<p id="property-name-1" style="font-size:15px; margin-bottom: 2px; ">Green View, Delhi</p>
+										<p id="user-review-1" style="font-size:12px; line-height: 16px;">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
+									</div>
 
+									<div class="row" style="color:#2196F3; padding:7px;" >
+											<span class="pull-right" style="margin-top: -5px;"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i> Wednesday, April 18, 2016</span></h6>
+									</div>
+									<div class="row review-log">
+										<span class="btn log button">Helpful</span>
+										<span class="btn log button">Say Thanks</span>
+										<span class="btn log button">Innapropriate</span>
+										<span class="btn log button pull-right" data-toggle="collapse" data-target="#comment2">Comment<p class="caret" style="font-size: 5px; margin:0px 6px;"></p></span>
+									</div>
+									<div id="comment2" class="collapse">
+										<div class=" row thumbnail">
+										    <div class="col-md-1" style="padding: 0px;">
+										    	<img src="images/placeholder_image.jpg" class="img-responsive">
+										    </div>
+										    <div class="col-md-11" style="padding: 8px;">
+										    	<input class="textbox-comment" type="text" placeholder="Write a comment..."> 
+										    </div>
+										</div>
+									</div>
+				            		</div>
+						 		</div>
+						 						<!-- Single Row for review -->
+						 		<div class="row thumbnail" style="margin-bottom: 40px;">
+				            		<div style="padding: 10px;">
+				            			<!-- Image Column -->
+									<div class="col-lg-2"> 
+										<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										<!-- Reviews Star -->
+										<div id="stars" style="padding-top:0px; color: #fff600;">
+											<!-- Star Filled icon by Icons8 -->
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<!--star end-->
+										</div>
+									</div>
+									<!-- Information -->
+									<div class="col-lg-3" style="padding-left:15px; text-align:justify; ">
+										<p id="username-1" style="font-size:15px; " >Kunal Chaudhary</p>
+										<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>2</kbd> Level</p>
+									</div>
+									<!-- Review Write Up -->
+									<div class="col-lg-7" style="text-align:justify; ">
+										<p id="property-name-1" style="font-size:15px; margin-bottom: 2px; ">Green View, Delhi</p>
+										<p id="user-review-1" style="font-size:12px; line-height: 16px;">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
+									</div>
 
+									<div class="row" style="color:#2196F3; padding:7px;" >
+											<span class="pull-right" style="margin-top: -5px;"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i> Wednesday, April 18, 2016</span></h6>
+									</div>
+									<div class="row review-log">
+										<span class="btn log button">Helpful</span>
+										<span class="btn log button">Say Thanks</span>
+										<span class="btn log button">Innapropriate</span>
+										<span class="btn log button pull-right" data-toggle="collapse" data-target="#comment3">Comment<p class="caret" style="font-size: 5px; margin:0px 6px;"></p></span>
+									</div>
+									<div id="comment3" class="collapse">
+										<div class=" row thumbnail">
+										    <div class="col-md-1" style="padding: 0px;">
+										    	<img src="images/placeholder_image.jpg" class="img-responsive">
+										    </div>
+										    <div class="col-md-11" style="padding: 8px;">
+										    	<input class="textbox-comment" type="text" placeholder="Write a comment..."> 
+										    </div>
+										</div>
+									</div>
+				            		</div>
+						 		</div>
+						 						<!-- Single Row for review -->
+						 		<div class="row thumbnail" style="margin-bottom: 40px;">
+				            		<div style="padding: 10px;">
+				            			<!-- Image Column -->
+									<div class="col-lg-2"> 
+										<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										<!-- Reviews Star -->
+										<div id="stars" style="padding-top:0px; color: #fff600;">
+											<!-- Star Filled icon by Icons8 -->
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<!--star end-->
+										</div>
+									</div>
+									<!-- Information -->
+									<div class="col-lg-3" style="padding-left:15px; text-align:justify; ">
+										<p id="username-1" style="font-size:15px; " >Kunal Chaudhary</p>
+										<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>2</kbd> Level</p>
+									</div>
+									<!-- Review Write Up -->
+									<div class="col-lg-7" style="text-align:justify; ">
+										<p id="property-name-1" style="font-size:15px; margin-bottom: 2px; ">Green View, Delhi</p>
+										<p id="user-review-1" style="font-size:12px; line-height: 16px;">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
+									</div>
+
+									<div class="row" style="color:#2196F3; padding:7px;" >
+											<span class="pull-right" style="margin-top: -5px;"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i> Wednesday, April 18, 2016</span></h6>
+									</div>
+									<div class="row review-log">
+										<span class="btn log button">Helpful</span>
+										<span class="btn log button">Say Thanks</span>
+										<span class="btn log button">Innapropriate</span>
+										<span class="btn log button pull-right" data-toggle="collapse" data-target="#comment4">Comment<p class="caret" style="font-size: 5px; margin:0px 6px;"></p></span>
+									</div>
+									<div id="comment4" class="collapse">
+										<div class=" row thumbnail">
+										    <div class="col-md-1" style="padding: 0px;">
+										    	<img src="images/placeholder_image.jpg" class="img-responsive">
+										    </div>
+										    <div class="col-md-11" style="padding: 8px;">
+										    	<input class="textbox-comment" type="text" placeholder="Write a comment..."> 
+										    </div>
+										</div>
+									</div>
+				            		</div>
+						 		</div>
+						 						<!-- Single Row for review -->
+						 		<div class="row thumbnail" style="margin-bottom: 40px;">
+				            		<div style="padding: 10px;">
+				            			<!-- Image Column -->
+									<div class="col-lg-2"> 
+										<img src="images/profile1.jpg" class="img-circle" width="80" height="80">
+										<!-- Reviews Star -->
+										<div id="stars" style="padding-top:0px; color: #fff600;">
+											<!-- Star Filled icon by Icons8 -->
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<!--star end-->
+										</div>
+									</div>
+									<!-- Information -->
+									<div class="col-lg-3" style="padding-left:15px; text-align:justify; ">
+										<p id="username-1" style="font-size:15px; " >Kunal Chaudhary</p>
+										<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>2</kbd> Level</p>
+									</div>
+									<!-- Review Write Up -->
+									<div class="col-lg-7" style="text-align:justify; ">
+										<p id="property-name-1" style="font-size:15px; margin-bottom: 2px; ">Green View, Delhi</p>
+										<p id="user-review-1" style="font-size:12px; line-height: 16px;">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
+									</div>
+
+									<div class="row" style="color:#2196F3; padding:7px;" >
+											<span class="pull-right" style="margin-top: -5px;"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i> Wednesday, April 18, 2016</span></h6>
+									</div>
+									<div class="row review-log">
+										<span class="btn log button">Helpful</span>
+										<span class="btn log button">Say Thanks</span>
+										<span class="btn log button">Innapropriate</span>
+										<span class="btn log button pull-right" data-toggle="collapse" data-target="#comment5">Comment<p class="caret" style="font-size: 5px; margin:0px 6px;"></p></span>
+									</div>
+									<div id="comment5" class="collapse">
+										<div class=" row thumbnail">
+										    <div class="col-md-1" style="padding: 0px;">
+										    	<img src="images/placeholder_image.jpg" class="img-responsive">
+										    </div>
+										    <div class="col-md-11" style="padding: 8px;">
+										    	<input class="textbox-comment" type="text" placeholder="Write a comment..."> 
+										    </div>
+										</div>
+									</div>
+				            		</div>
+						 		</div>
 						 		<!-- ==============================pagenation ==================================== -->
 						 	<div class="row">
 						 		<div class="col-sm-4 col-sm-offset-4" style="padding-left: 14px;">		

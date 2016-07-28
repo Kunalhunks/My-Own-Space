@@ -3,7 +3,7 @@ html{
 }
 
 body{
-
+  overflow-x: hidden; 
 }
 p{
   font-size: 12px;
@@ -35,13 +35,17 @@ small{
   margin-top: 2px;
   margin-right: 5px;
   padding: 5px 8px;
-  background-color: rgba(63, 81, 181, 0.82);
+  background-color: rgba(25, 117, 210, 0.84);
   display: block;
   list-style: none;
   border-radius: 10px;
   color:  #1976D2;
 }
 .navbar-city:hover{
+  color: #1976D2;
+  background-color: #fff;
+}
+.navbar-city:focus{
   color: #1976D2;
   background-color: #fff;
 }
@@ -170,6 +174,20 @@ small{
     border-color: #424242;
     outline: none;
 }
+.textbox-comment {
+    background: #fff ;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    border: 0.5px solid #fff;
+    border-radius: 2px;
+}
+
+.textbox-comment:focus {
+    color: #000;  
+    background-color: #FFF;
+    border-color: #e2e2e2;
+    outline: none;
+}
 
 .fa:hover {
   color: #fff;
@@ -224,7 +242,38 @@ small{
   -moz-transition:    0.08s ease-out;
   -webkit-transition: 0.08s ease-out;
 }
-
+.button:focus{
+  color: #fff;
+}
+.review-log{
+  background-color: 0;
+  border: 1px solid #e2e2e2;
+}
+.log{
+  position: relative;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 0px;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: none;
+  background-color: #2196F3;
+  transition:         0.08s ease-out;
+  -o-transition:      0.08s ease-out;
+  -ms-transition:     0.08s ease-out;
+  -moz-transition:    0.08s ease-out;
+  -webkit-transition: 0.08s ease-out; 
+}
+.review-log span{
+  color: #2196F3;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+.review-log span:hover{
+  color: #fff;
+  background-color: #2196F3;
+}
 .fill:hover {
   color: #fff;
   background-color: #1976D2;
@@ -239,27 +288,6 @@ small{
   background-color: #1976D2;
 }
 
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx vertical swiper xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
 
 /***********************
   OUTLINE BUTTONS
@@ -297,7 +325,7 @@ border-radius: 0px;
 }
   
 .btn-search{
-  background-color:#3F51B5; 
+  background-color:#1976D2; 
   border-radius: 2px; 
   color:white; 
   padding-left:20px; 
@@ -308,7 +336,7 @@ border-radius: 0px;
 }
 .btn-link {
   color: #1976D2;
-}
+}   
 .btn-link:hover{
   color: #000;
   text-decoration: none;

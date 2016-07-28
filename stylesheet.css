@@ -189,6 +189,24 @@ small{
     outline: none;
 }
 
+.background-cover{
+  background-image: url(images/bg.jpg);  
+  background-size: cover; 
+}
+.background-strip{
+  background-color: #484848;
+  color: #fff;
+}
+.wrapper{
+  margin-top: 50px;
+}
+.img-top{
+  margin-top: 14px;
+}
+.img-top img{
+  margin-bottom: -58px;
+  display: block;
+}
 .fa:hover {
   color: #fff;
 }

@@ -1,0 +1,38 @@
+Artical Board- 
+1. Comming Soon for silive.in
+2. 5-6 Articals on Board
+
+
+-------------------------------------------------------
+Byte Pad Icon, color Comination for IOs and android
+-------------------------------------------------------
+Navigation Bar Drop Customisation
+Navigation Scroll Effect
+
+
+
+
+
+
+Add Comment(Is User Convences with Only Yes Button)
+Select City Shift in all
+On Landing:	Search and select city center and select city in white in bg
+Review Building img in footor (Dense, Full width, Detailed Building)
+Popular Property Remove on Landing
+
+Property Page: 
+Pagination in Reviews
+Popup on View Full Deitals with Heading and artical divided in two col.
+
+Add Review:
+Quote Letter Spacing And Width
+5 Stars In Review 2
+Last Visited On below image ()
+
+Rating Tooltip:Property
+
+Builder and User differencation on pic of review and comment(Also when profile pic is not present)
+
+Matrail Palette 
+
+Landing Counter on Statistics

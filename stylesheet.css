@@ -276,8 +276,8 @@ small{
 }
 .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
     color: #fff;
-    border-color: rgba(0, 212, 163, 1);
-    background-color: rgba(0, 212, 163, 1);
+    border-color: rgb(25, 118, 210);
+    background-color: rgb(25, 118, 210);
 }
 .btn-primary.outline:active, .btn-primary.outline.active {
     border-color: #007299;
@@ -306,3 +306,16 @@ border-radius: 0px;
 .btn-search:hover{
   color: white;
 }
+.link-btn span:nth-child(1):hover{
+ color: #000;
+}
+.link-btn span:nth-child(2):hover{
+ color: #000;
+}
+.link-btn span:nth-child(3):hover{
+ color: #000;
+}
+.link-btn span:nth-child(4):hover{
+ color: #000;
+}
+

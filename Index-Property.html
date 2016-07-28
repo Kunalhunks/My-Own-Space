@@ -43,68 +43,6 @@
 
 
 
-/*Similar Property Hover*/
-.card {
-    overflow: hidden;
-    width: 100%;
-    background-color: rgba(0, 212, 163, 1);
-  }
-.card-image {
-	height: 100%;
-    background-color:  rgba(0, 212, 163, 1);
-    transition: height 0.3s; 
-}
-.card-image img {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.3s, 
-    -webkit-transform 0.3s;
-    transform: 0.3s;
-    -webkit-transform: scale(1);
-    transform: scale(1); 
-    overflow: hidden;
-}
-.card:hover .card-image img {
-    opacity: 0.2;
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05); 
-    overflow: hidden;
-}
-.card-text {
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    padding: 0px 0px 0px 0px;
-    color: #fff;
-    font-size: 10px;
-    line-height: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    opacity: 0;
-    transition: opacity 0.5s, 
-    -webkit-transform 0.5s;
-    -webkit-transform: translateY(25px);
-    -ms-transform: translateY(25px);
-    transform: translateY(25px); 
-}
-.card:hover .card-text {
-    opacity: 1;
-    transition-delay: 0.1s;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); 
-}
-
-
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      margin: auto;
-
-  }
-
 </style>
 
 
@@ -128,21 +66,21 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="navbar-city pull-left">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle drop-link" id="dropdown-city-prop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Select City <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Ghaziabad</a></li>
-            <li><a href="#">Faridabad</a></li>
-            <li><a href="#">Gautam Buddha Nagar</a></li>
-            <li><a href="#">Noida</a></li>
-            <li><a href="#">Gurgaon</a></li>
-          </ul>
-        </li>
-      </ul>
       <ul>
-      		<div class="search-bar">
-				<div class="col-lg-6 col-lg-offset-1" style="padding-top:8px; ">
+      		<div class="search-bar center-block">
+				<div class="col-lg-6 col-lg-offset-2" style="padding-top:8px; ">
+					<ul class="navbar-city pull-left">
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle drop-link" id="dropdown-city-prop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Select City <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Ghaziabad</a></li>
+				            <li><a href="#">Faridabad</a></li>
+				            <li><a href="#">Gautam Buddha Nagar</a></li>
+				            <li><a href="#">Noida</a></li>
+				            <li><a href="#">Gurgaon</a></li>
+				          </ul>
+				        </li>
+				      </ul>
    					<div class="input-group" >
      					  <input type="text" class="form-control" placeholder="Project name, Location, Builder..">
 
@@ -553,17 +491,6 @@
 						<p style="font-weight: bolder;font-size: 14px;">Range</p>
 						<p style="line-height: 1px;">Rs 44.99 to 64.41 L</p>
 					</div>
-					<div class="col-sm-7">
-						<div class="row">
-							<div class="col-sm-4 col-sm-offset-2 ">
-							<button class="btn button fill" style="height:47px; width:180px;">Follow Property</button>
-							</div>
-						
-							<div class="col-sm-4 ">				
-							<button type="button" class="btn btn-primary outline" style="height:47px; width:180px;">READ FULL DEATILS</button>
-							</div>	
-						</div>		
-					</div>
  	</div>
 </div>
 </div>
@@ -573,12 +500,21 @@
 
 <div class="container-fluid" style="padding: 0px; border-bottom:1px solid #e4e4e4;">
 	<div class="container">
-		<div class="row">
-			<ol class="breadcrumb" style="padding:15px 30px;">
-			  <li><a href="#">Ghaziabad</a></li>
-			  <li><a href="#">NH-58</a></li>
-			  <li class="active">Rajnagar Extension</li>
-			</ol>
+		<div class="row" style="padding: 10px;">
+			<div class="col-sm-8">
+				<ol class="breadcrumb" style="padding:15px 30px;">
+				  <li><a href="#">Ghaziabad</a></li>
+				  <li><a href="#">NH-58</a></li>
+				  <li class="active">Rajnagar Extension</li>
+				</ol>
+			</div>
+			<div class="col-sm-2">
+			<button class="btn button fill" style="height:47px; width:180px;">Follow Property</button>
+			</div>
+		
+			<div class="col-sm-2">				
+			<button type="button" class="btn btn-primary outline" style="height:47px; width:180px;">READ FULL DEATILS</button>
+			</div>	
 		</div>
 		
 	</div>
@@ -636,11 +572,11 @@
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, odio et elementum fringilla, lectus diam tristique leo, id sodales mi tortor ut orci. Ut dignissim metus at tempor congue. Nulla dipiscing elit. Donec aliquet, tur nisi, fringilla eleifend velit luctus a. Nullam dui dolor, gravida id pharetra in, ullamcorper in velit. Aliquam erat volutpat. Ut in lacus tristique.... <a><span>Read More</span></a> </p>
 									</div>
 
-									<div class="row" style="color:#2196F3; padding:7px;" >
+									<div class="row link-btn" style="color:#2196F3; padding:7px;" >
 										<div class="col-sm-12 " style="height:25px; background-color:white;">
-											<a href=""><span style="padding:5px; padding-left:15px; margin: 0px">Helpful</span><a href="#"> <span style="color:#2196F3; padding-left:10px;">Say Thanks</span> </a>
-											<a href="#"> <span style="color:#2196F3; padding-left:10px;">Innapropriate</span> </a>
-											<a href="#"> <span style="color:#2196F3; padding-left:10px;">Comment</span> </a>
+											<span style="padding:5px; padding-left:15px; margin: 0px">Helpful</span><span style="color:#2196F3; padding-left:10px;">Say Thanks</span>
+											 <span style="color:#2196F3; padding-left:10px;">Innapropriate</span> 
+											<span style="color:#2196F3; padding-left:10px;">Comment</span> 
 											<span class="pull-right"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i> Wednesday, April 18, 2016</span></h6>
 											
 										</div>		 
@@ -751,142 +687,45 @@
 							</div>		
 
 			 	</div>
+			 	<div class="col-md-4">
+			 		<div class="row">
+						<h5 style="margin:0px;">TOP</h5>
+						<h3 style="text-transform: uppercase; margin: 0px;">Similar Property</h3>
+						<hr style="border-top-color: #000; margin:5px 0px 30px 0px;">
+			 		</div>
+			 		<div class="row" style="margin: 5px auto;">
+			 			<div style="padding: 20px; background-image: url(images/bg.jpg); background-size: cover; color: #fff; font-weight: bold;">
+			 				<h4 style=" margin-top: 80px; margin-bottom: 0px;">The Oberoi, Mumbai</h4>
+			 				<p><span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span>
+			 				<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes <span class="pull-right"><a style="color: white;">View All Details</a></span></p>
+										</p>
+			 			</div>
+			 		</div>
+			 		<hr style="margin: 10px auto;">
+			 		<div class="row" style="margin: 5px auto;">
+			 			<div style="padding: 20px; background-image: url(images/bg.jpg); background-size: cover; color: #fff; font-weight: bold;">
+			 				<h4 style=" margin-top: 80px; margin-bottom: 0px;">The Oberoi, Mumbai</h4>
+			 				<p><span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span>
+			 				<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes <span class="pull-right"><a style="color: white;">View All Details</a></span></p>
+										</p>
+			 			</div>
+			 		</div>
+			 		<hr style="margin: 10px auto;">
+			 		<div class="row" style="margin: 5px auto;">
+			 			<div style="padding: 20px; background-image: url(images/bg.jpg); background-size: cover; color: #fff; font-weight: bold;">
+			 				<h4 style=" margin-top: 80px; margin-bottom: 0px;">The Oberoi, Mumbai</h4>
+			 				<p><span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span>
+			 				<p id="no-of-review-1" style="font-size:12px;line-height:70%; "><kbd>180</kbd> Reviews</p>
+										<p id="no-of-review-1" style="font-size:12px; line-height:70%;"><kbd>34</kbd> Likes <span class="pull-right"><a style="color: white;">View All Details</a></span></p>
+										</p>
+			 			</div>
+			 		</div>
+			 	</div>
 
 
-			 	<!-- Similar Property -->
-			 	<div class="col-sm-4">
-			 		<h5 style="margin:0px;">TOP</h5>
-					<h3 style="text-transform: uppercase; margin: 0px;">Similar Property</h3>
-					<hr style="border-top-color: #000; margin:5px 0px 30px 0px;">
-					
-			 		<div class="row">
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-							<div class="card"> 
-								<div class="card-image">
-									<img src="images/s1.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-						</div>
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-			 				<div class="card"> 
-								<div class="card-image">
-									<img src="images/s2.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-			 			</div>
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-			 				<div class="card"> 
-								<div class="card-image">
-									<img src="images/s3.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-			 			</div>
-			 		</div>
-			 		<div class="row">
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-			 				<div class="card"> 
-								<div class="card-image">
-									<img src="images/s3.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-			 			</div>
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-			 				<div class="card"> 
-								<div class="card-image">
-									<img src="images/s4.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-			 			</div>
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-			 				<div class="card"> 
-								<div class="card-image">
-									<img src="images/s1.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-			 			</div>
-			 		</div>
-			 		<div class="row">
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-							<div class="card"> 
-								<div class="card-image">
-									<img src="images/s1.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-						</div>
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-			 				<div class="card"> 
-								<div class="card-image">
-									<img src="images/s2.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-			 			</div>
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-			 				<div class="card"> 
-								<div class="card-image">
-									<img src="images/s3.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-			 			</div>
-			 		</div>
-			 		<div class="row">
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-			 				<div class="card"> 
-								<div class="card-image">
-									<img src="images/s3.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-			 			</div>
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-			 				<div class="card"> 
-								<div class="card-image">
-									<img src="images/s4.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-			 			</div>
-			 			<div class="col-sm-4 col-xs-4" style="padding: 2px;">
-			 				<div class="card"> 
-								<div class="card-image">
-									<img src="images/s1.jpg" class="img-responsive">
-								</div>
-								<div class="card-text">
-									<h6 style="margin-bottom: 0px;">Property Name</h6>
-								</div>
-							</div>
-			 			</div>
-			 		</div>
+			 	
 
 			 	</div>
 			 </div>
@@ -976,6 +815,9 @@
 	</div>
 </div>
 
+<div class="container-fluid" style="background-color: #424242; padding: 0px; margin-top: -85px">
+<img src="images/building-footer.png" class="img-responsive center-block" pad  style="color: #808080;">	
+</div>
 
 <div class="container-fluid" style="background-color: #191919; padding: 30px 0px;">
 	<div class="col-sm-12">

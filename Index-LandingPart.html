@@ -64,7 +64,7 @@
         </div>
     </div>
 </div> -->
-<div class="navbar navbar-default navbar-fixed-top" id="navbar-custom">
+<div class="navbar navbar-default navbar-static-top" id="navbar-custom" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -89,6 +89,29 @@
   </div><!-- /.container-fluid -->
 </div><!--navbar end-->
 
+
+<style type="text/css">
+  .affix {
+	  top: 0;
+	  width: 100%;
+	  -webkit-transition: all .3s ease-in-out;
+	  transition: all .3s ease-in-out;
+	  color: #fff;
+	  background-color:  #3F51B5;
+  }
+  .affix a {
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      color: #fff;
+  }
+  .affix a:hover{
+  	color:#3F51B5;
+  }
+  .affix-top a {
+  	color: #000;
+  }
+
+</style>
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx modal xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 		
@@ -744,6 +767,58 @@
         freenav: true
     });
     </script>
+
+
+    <div id="navbar-custom" class="navbar navbar-static-top" role="navigation" data-spy="affix" data-offset-top="485" style="z-index:9399; margin:0px;">
+    	<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">REALESTATE</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul>
+      		<div class="search-bar center-block">
+				<div class="col-lg-6 col-lg-offset-2" style="padding-top:8px; ">
+					<ul class="pull-left" style="list-style: none;">
+				        <li class="dropdown">
+				          <a href="#" class=" navbar-city dropdown-toggle drop-link" id="dropdown-city-prop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Select City <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Ghaziabad</a></li>
+				            <li><a href="#">Faridabad</a></li>
+				            <li><a href="#">Gautam Buddha Nagar</a></li>
+				            <li><a href="#">Noida</a></li>
+				            <li><a href="#">Gurgaon</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+   					<div class="input-group" >
+     					  <input type="text" class="form-control" placeholder="Project name, Location, Builder..">
+
+     				 	  <span class="input-group-btn">
+      			 		  <button class="btn" type="button"style="background-color:#1976D2; border-radius: 2px; color:white; ">Search</button>
+    					  </span>
+    					  <!-- Dropdown -->
+    					  
+   				 	</div><!-- /input-group -->
+  				</div><!-- /.col-lg-6 -->
+			</div><!--row end-->
+      </ul>
+	  <ul class="nav navbar-nav navbar-right" style="margin-top:-10px;">
+        <li><a href="#">News</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+	</div>
 </body>
 
 </html>

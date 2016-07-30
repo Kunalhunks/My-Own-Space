@@ -514,13 +514,60 @@
 			</div>
 		
 			<div class="col-sm-2">				
-			<button type="button" class="btn btn-primary outline" style="height:47px; width:180px;">READ FULL DEATILS</button>
+			<button type="button" class="btn btn-primary outline" style="height:47px; width:180px;"data-toggle="modal" data-target="#details"  >READ FULL DEATILS</button>
 			</div>	
 		</div>
 		
 	</div>
 </div>
 
+<!-- Modal-login -->
+		<div class="modal fade" id="details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-left:-14px;">
+
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content"  style="border-radius: 0px;">    
+
+		    	<div class="modal-body">
+		    		<div id="close-modal">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    				</div>	
+    				<div class="row" style="margin-top: 20px;">
+    					<div class="col-md-6">
+	    					<h3 style="padding: 0px 15px;">Property Name</h3>
+	    				</div>
+	    				<div class="col-md-6">
+	    					<button class="btn button fill pull-right" style="height:42px; width:168px;">Follow Property</button>
+	    				</div>
+    				</div>
+    				<hr>
+    				<div class="row" style="margin-top: 20px;">
+    					<div class="col-sm-6">
+    						<p style="font-weight: bolder;font-size: 14px;">Apartments Avilable</p>
+							<p style="line-height: 1px;">2BHK 3BHK 4BHK</p>
+    					</div>
+    					<div class="col-sm-6">
+    						<p style="font-weight: bolder;font-size: 14px;">Apartments Avilable</p>
+							<p style="line-height: 1px;">2BHK 3BHK 4BHK</p>
+    					</div>
+    				</div>
+    				<div class="row">
+    					<div class="col-sm-6">
+    						<p style="font-weight: bolder;font-size: 14px;">Range</p>
+							<p style="line-height: 1px;">Rs 44.99 to 64.41 L</p>
+    					</div>
+    					<div class="col-sm-6">
+    						<p style="font-weight: bolder;font-size: 14px;">Range</p>
+							<p style="line-height: 1px;">Rs 44.99 to 64.41 L</p>
+    					</div>
+    				</div>
+    				<hr>
+    				<div class="row" style="padding: 15px;">
+    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat pretium lectus eu consectetur. Mauris euismod, enim sit amet laoreet volutpat, tellus leo ullamcorper ex, non aliquet orci arcu at tellus. Sed dictum malesuada lacinia. Aenean vestibulum ultricies enim, vitae accumsan enim cursus fringilla. Integer non egestas augue, eu posuere augue. Nam et ex efficitur, condimentum quam eget, luctus nunc. Nulla eu leo convallis, feugiat lorem eu, pretium erat.</p>
+    				</div>
+			    </div>
+		   </div>
+		  </div>
+		</div>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx reviews xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <div class="container-fluid" style="padding:30px 0px; ">
@@ -592,6 +639,7 @@
 										    </div>
 										    <div class="col-md-11" style="padding: 8px;">
 										    	<input class="textbox-comment" type="text" placeholder="Write a comment..."> 
+										    	<span></span>
 										    </div>
 										</div>
 									</div>

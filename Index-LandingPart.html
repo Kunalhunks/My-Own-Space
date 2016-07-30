@@ -157,40 +157,90 @@
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx modal xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 		
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog" role="document">
+		  <div class="modal-dialog" role="document" style="height: 412px;">
 		    <div class="modal-content"  style="border-radius: 0px;">    
 		    	<div class="modal-body">
 		    		<div class="row">
-		    			<div class="col-lg-5">
-		    				<img src="images\house.jpg" style="width:240px; height:400px; margin-left:-30px; margin-bottom:-15px;">
-		    			</div>
-		    			<div class="col-lg-7" >
-		    				<div id="close-modal">
+		    				<div class="col-lg-5">
+			    				<img src="images\house.jpg" style="width:240px; height:400px; margin-left:-30px; margin-bottom:-15px;">
+			    			</div>
+			    			<div class="col-lg-7" >
+			    				<div id="close-modal">
 		    						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-		    				</div>
-		    				<div class="contents" style="padding-top:65px;">
-		    					
-		    					<div class="row text-center">
-		        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color: #DD4B39; margin-bottom:10px;"><i class="fa fa-google-plus" aria-hidden="true" style="padding-right:10px;"></i> Connect with Google+</button>
+			    				</div>
+			    				<div class="contents" style="padding-top:36px;">
+			    					<div class="row">
+				    					
+			    						<div class="login-form collapse">
+			        							<div class="row text-center">
+					        					  <input type="text" class="form-control" id="sign-up-builder" placeholder="EMAIL" aria-describedby="basic-addon1">
+						    		   			  <input type="text" class="form-control" id="sign-up-builder" placeholder="PASSWORD" aria-describedby="basic-addon1">
+						        				</div>
+						        				<div style="padding:20px 0px 77px 0px; float:right;" class="center-block">
+													<button class="btn button fill" style="padding:10px 20px;">LOGIN</button>	
+													<button type="button"  data-parent="#accordion" class="btn" id="myButton1" data-toggle="collapse" data-target=".login-form" style="border-radius: 0px; width: 73px; text-transform: uppercase; color: white; background-color: #414141; margin-bottom: 10px; margin: 10px 0px; padding: 4px;}">BACK</button>
+												</div>
+			        					</div>
+			        				</div>
+			        				<div class="row">
+			        					<div class="signup-form collapse">
+			        						<div class="row text-center">
+						        					 <input type="text" class="form-control" id="sign-up-builder" placeholder="NAME" aria-describedby="basic-addon1" style="  line-height: 58px;
+																height: 58px;
+																background: #FFF none repeat scroll 0% 0%;
+																position: relative;
+																margin-bottom: -1px;
+																border: 1px solid #E6E6E6;
+																transition: border 0.3s ease 0s, height 0.3s ease 0s;
+																border-radius: 0px;
+																box-shadow: none;">
+							    		   			  <input type="text" class="form-control" id="sign-up-builder" placeholder="EMAIL" aria-describedby="basic-addon1" style="  line-height: 58px;
+																height: 58px;
+																background: #FFF none repeat scroll 0% 0%;
+																position: relative;
+																margin-bottom: -1px;
+																border: 1px solid #E6E6E6;
+																transition: border 0.3s ease 0s, height 0.3s ease 0s;
+																border-radius: 0px;
+																box-shadow: none;">
+							    					  <input type="text" class="form-control" id="sign-up-builder" placeholder="PASSWORD" aria-describedby="basic-addon1" style="  line-height: 58px;
+																height: 58px;
+																background: #FFF none repeat scroll 0% 0%;
+																position: relative;
+																margin-bottom: -1px;
+																border: 1px solid #E6E6E6;
+																transition: border 0.3s ease 0s, height 0.3s ease 0s;
+																border-radius: 0px;
+																box-shadow: none;">
 
-		        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color: #3B5998; margin-bottom:10px;"><i class="fa fa-facebook" aria-hidden="true" style="padding-right:10px;"></i> Connect with Facebook</button>
-		        				</div>
-		        				<div class="row text-center">
-		        					<p style="color:#999; margin:10px 0px;">or use your email address</p>
-		        				</div>
-		        				<div class="row text-center">
-		        					<div class="col-sm-12">
-			        					<button type="button" class="btn" data-toggle="modal" data-target="#myModal-login" id="modal-login" style="border-radius:2px; width:255px; color:white; background-color: #1976D2; margin-bottom:10px; margin:10px 0px;">Login</button>
-			        				</div>	
-			        				<div class="col-sm-12">
-			        					<button type="button" class="btn" data-toggle="modal" data-target="#myModal-signup" style="border-radius:2px; width:255px; color:#1976D2; background-color: white; margin-bottom:10px; border:1px solid blue;">Sign Up</button>
+			        							<div style="padding:20px 0px 23px 0px; float:right;" class="center-block">	
+													<button class="btn button fill" style="padding:10px 20px;">SIGNUP</button>	
+													<button type="button"  data-parent="#accordion" class="btn" id="myButton1" data-toggle="collapse" data-target=".signup-form" style="border-radius: 0px; width: 73px; text-transform: uppercase; color: white; background-color: #414141; margin-bottom: 10px; margin: 10px 0px; padding: 4px;}">BACK</button>
+												</div>
+			        						</div>
+			        					</div>
+
+			    					</div>
+			    					<div class="row text-center">
+			        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color: #DD4B39; margin-bottom:10px;"><i class="fa fa-google-plus" aria-hidden="true" style="padding-right:10px;"></i> Connect with Google+</button>
+			        					<button type="button" class="btn" style="border-radius:2px; width:255px; color:white; background-color: #3B5998; margin-bottom:10px;"><i class="fa fa-facebook" aria-hidden="true" style="padding-right:10px;"></i> Connect with Facebook</button>
+			        							
+			        				</div>
+			        				<div class="row text-center">
+			        					<p style="color:#999; margin:10px 0px;">or use your email address</p>
+			        				</div>
+			        				<div class="row text-center" id="accordian">
+			        					<div class="col-sm-12">
+				        					<button type="button"  data-parent="#accordion" class="btn" id="myButton1" data-toggle="collapse" data-target=".login-form" style="border-radius:2px; width:255px; color:white; background-color: #1976D2; margin-bottom:10px; margin:10px 0px;">Login</button>
+				        					
+				        				</div>	
+				        				<div class="col-sm-12">
+				        					<button type="button"  data-parent="#accordion" class="btn" data-toggle="collapse" data-target=".signup-form" style="border-radius:2px; width:255px; color:#1976D2; background-color: white; margin-bottom:10px; border:1px solid blue;">Sign Up</button>
+				        				</div>
 			        				</div>
 			        				
-		        				</div>
-
-
-		        			</div>	
-		        		</div>	
+			        			</div>	
+			        		</div>
 		        	</div>	
 			    </div>
 		   </div>
@@ -198,7 +248,7 @@
 		</div>
 		<!-- modal end -->
 		<!-- Modal-login -->
-		<div class="modal fade" id="myModal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-left:-14px;">
+		<!-- <div class="modal fade" id="myModal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-left:-14px;">
 
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content"  style="border-radius: 0px;">    
@@ -243,7 +293,7 @@
 			    </div>
 		   </div>
 		  </div>
-		</div>
+		</div> -->
 
 		<!-- modal end -->
 		<!-- Modal-signup -->
@@ -289,10 +339,10 @@
 												border-radius: 0px;
 												box-shadow: none;">
 
-		    					</div>
 		    						<div style="padding:20px 0px; float:right;" class="center-block">
 										<button class="btn button fill" style="padding:10px 20px;">SIGNUP</button>	
 									</div>
+		    					</div>
 		        			</div>	
 		        		</div>	
 		        	</div>	

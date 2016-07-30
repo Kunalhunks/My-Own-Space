@@ -140,6 +140,25 @@ small{
   color:#1976D2;
 
 }
+#sign-up-builder{
+  line-height: 58px;
+  height: 58px;
+  background: #FFF none repeat scroll 0% 0%;
+  position: relative;
+  margin-bottom: -1px;
+  border: 1px solid #E6E6E6;
+  transition: border 0.3s ease 0s, height 0.3s ease 0s;
+  border-radius: 0px;
+  box-shadow: none;
+}
+/*=========================================================*/
+@media (min-width: 768px){
+.modal-dialog {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    margin: 100px auto;
+}
 
 /*============================================================*/
 

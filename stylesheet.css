@@ -22,15 +22,13 @@ small{
 .breadcrumb {
   background-color: white;
 }
-.navbar{
-  margin-bottom: -50px;
-}
+
 #navbar-custom.navbar-default .navbar-brand {
     color: rgba(255, 255, 255, 1);
 }
 #navbar-custom.navbar-default {
     font-size: 12px;
-    background-color: transparent;
+    background-color: #303F9F;
     border-bottom-width: 0px;
 }
 .navbar-city{
@@ -64,12 +62,12 @@ small{
 }
 #navbar-custom.navbar-default .navbar-nav>li>a {
     color: rgba(255, 255, 255, 1);
-    background-color: transparent;
+    background-color: #303F9F;
 }
 #navbar-custom.navbar-default .navbar-nav>li>a:hover,
 #navbar-custom.navbar-default .navbar-nav>li>a:focus {
     color: #fff;
-    background-color: rgba(255,255,255,0.2);
+    background-color: #3F51B5;
 }
 #navbar-custom.navbar-default .navbar-nav>.active>a,
 #navbar-custom.navbar-default .navbar-nav>.active>a:hover,

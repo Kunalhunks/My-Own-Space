@@ -87,10 +87,13 @@ small{
 }
 #navbar-custom.navbar-default .navbar-toggle:hover .icon-bar,
 #navbar-custom.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #00d4a3;
+    background-color: #303F9F;
 }
-
-
+@media(max-width: 768px){
+		.navbar-city{
+			display: none;
+		}
+}
 /*============================================================================ Button Head*/
 .btn-tool {
   border: none;
